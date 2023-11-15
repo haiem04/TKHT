@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="82f46b0c2ca74aa5af64c652a9dd87ce" Name="Diagram1">
+        <EntityTypeShape EntityType="TKHTModel.Account" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TKHTModel.Attempt" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TKHTModel.Attempt_Question" Width="1.5" PointX="9.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TKHTModel.Chapter" Width="1.5" PointX="5.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TKHTModel.Class" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="TKHTModel.Question" Width="1.5" PointX="7.5" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="TKHTModel.Student" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TKHTModel.Subject" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TKHTModel.sysdiagram" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TKHTModel.Test" Width="1.5" PointX="9.75" PointY="7.375" IsExpanded="true" />
+        <AssociationConnector Association="TKHTModel.FK_Account_Student" ManuallyRouted="false" />
+        <AssociationConnector Association="TKHTModel.FK__Attempt__Student__619B8048" ManuallyRouted="false" />
+        <AssociationConnector Association="TKHTModel.FK__Attempt__TestId__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="TKHTModel.FK__Attempt_Q__Attem__656C112C" ManuallyRouted="false" />
+        <AssociationConnector Association="TKHTModel.FK__Attempt_Q__Quest__66603565" ManuallyRouted="false" />
+        <AssociationConnector Association="TKHTModel.FK__Chapter__Subject__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="TKHTModel.FK__Question__Chapte__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="TKHTModel.FK__Student__ClassId__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="TKHTModel.FK_test_subject" ManuallyRouted="false" />
+        <AssociationConnector Association="TKHTModel.Subject_Class" ManuallyRouted="false" />
+        <AssociationConnector Association="TKHTModel.Test_Question" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

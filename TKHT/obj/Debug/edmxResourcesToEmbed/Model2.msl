@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TKHTModelStoreContainer" CdmEntityContainer="TKHTEntities1">
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="TKHTModel.Account">
+        <MappingFragment StoreEntitySet="Account">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Attempts">
+      <EntityTypeMapping TypeName="TKHTModel.Attempt">
+        <MappingFragment StoreEntitySet="Attempt">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Attempt_Question">
+      <EntityTypeMapping TypeName="TKHTModel.Attempt_Question">
+        <MappingFragment StoreEntitySet="Attempt_Question">
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="AttemptId" ColumnName="AttemptId" />
+          <ScalarProperty Name="QuestionId" ColumnName="QuestionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Chapters">
+      <EntityTypeMapping TypeName="TKHTModel.Chapter">
+        <MappingFragment StoreEntitySet="Chapter">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ChapterName" ColumnName="ChapterName" />
+          <ScalarProperty Name="SubjectId" ColumnName="SubjectId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Classes">
+      <EntityTypeMapping TypeName="TKHTModel.Class">
+        <MappingFragment StoreEntitySet="Class">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Questions">
+      <EntityTypeMapping TypeName="TKHTModel.Question">
+        <MappingFragment StoreEntitySet="Question">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="QuestionText" ColumnName="QuestionText" />
+          <ScalarProperty Name="CorrectAnswer" ColumnName="CorrectAnswer" />
+          <ScalarProperty Name="AnswerA" ColumnName="AnswerA" />
+          <ScalarProperty Name="AnswerB" ColumnName="AnswerB" />
+          <ScalarProperty Name="AnswerC" ColumnName="AnswerC" />
+          <ScalarProperty Name="AnswerD" ColumnName="AnswerD" />
+          <ScalarProperty Name="ChapterId" ColumnName="ChapterId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="TKHTModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subjects">
+      <EntityTypeMapping TypeName="TKHTModel.Subject">
+        <MappingFragment StoreEntitySet="Subject">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="TKHTModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tests">
+      <EntityTypeMapping TypeName="TKHTModel.Test">
+        <MappingFragment StoreEntitySet="Test">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="SubjectId" ColumnName="SubjectId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Subject_Class" TypeName="TKHTModel.Subject_Class" StoreEntitySet="Subject_Class">
+      <EndProperty Name="Class">
+        <ScalarProperty Name="id" ColumnName="ClassId" />
+      </EndProperty>
+      <EndProperty Name="Subject">
+        <ScalarProperty Name="id" ColumnName="SubjectId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Test_Question" TypeName="TKHTModel.Test_Question" StoreEntitySet="Test_Question">
+      <EndProperty Name="Question">
+        <ScalarProperty Name="id" ColumnName="QuestionId" />
+      </EndProperty>
+      <EndProperty Name="Test">
+        <ScalarProperty Name="id" ColumnName="TestId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="TKHTModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="TKHTModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="TKHTModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="TKHTModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TKHTModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="TKHTModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TKHTModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="TKHTModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="TKHTModel.Store.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

@@ -101,6 +101,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(600, 23);
             this.textBox1.TabIndex = 18;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // pictureBox2
             // 
@@ -235,6 +236,7 @@
             this.button2.TabIndex = 42;
             this.button2.Text = "LOGIN";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label7
             // 

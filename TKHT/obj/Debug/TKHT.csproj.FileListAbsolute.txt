@@ -14,3 +14,5 @@ C:\Users\ADMIN\source\repos\TKHT\TKHT\obj\Debug\TKHT.csproj.CoreCompileInputs.ca
 C:\Users\ADMIN\source\repos\TKHT\TKHT\obj\Debug\TKHT.csproj.CopyComplete
 C:\Users\ADMIN\source\repos\TKHT\TKHT\obj\Debug\TKHT.exe
 C:\Users\ADMIN\source\repos\TKHT\TKHT\obj\Debug\TKHT.pdb
+C:\Users\ADMIN\source\repos\TKHT\TKHT\obj\Debug\TKHT.PView.FAdmin.resources
+C:\Users\ADMIN\source\repos\TKHT\TKHT\obj\Debug\TKHT.PView.FManage.resources

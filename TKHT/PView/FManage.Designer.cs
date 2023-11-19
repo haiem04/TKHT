@@ -77,8 +77,6 @@
             this.dgvLop = new System.Windows.Forms.DataGridView();
             this.txtHelp = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.label13 = new System.Windows.Forms.Label();
-            this.huongDanHVTXT = new System.Windows.Forms.TextBox();
             this.dgvHV = new System.Windows.Forms.DataGridView();
             this.xemhvBTN = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -287,7 +285,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 38);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(1724, 898);
+            this.tabPage2.Size = new System.Drawing.Size(1724, 901);
             this.tabPage2.TabIndex = 4;
             this.tabPage2.Text = "Biên lai";
             // 
@@ -486,7 +484,7 @@
             this.tabPage5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage5.Size = new System.Drawing.Size(1724, 898);
+            this.tabPage5.Size = new System.Drawing.Size(1724, 901);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "Lớp";
             // 
@@ -774,8 +772,6 @@
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(59)))), ((int)(((byte)(122)))));
-            this.tabPage4.Controls.Add(this.label13);
-            this.tabPage4.Controls.Add(this.huongDanHVTXT);
             this.tabPage4.Controls.Add(this.dgvHV);
             this.tabPage4.Controls.Add(this.xemhvBTN);
             this.tabPage4.Controls.Add(this.panel9);
@@ -796,33 +792,6 @@
             this.tabPage4.Size = new System.Drawing.Size(1724, 901);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = " Học viên";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(1369, 614);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(117, 25);
-            this.label13.TabIndex = 25;
-            this.label13.Text = "Hướng dẫn";
-            // 
-            // huongDanHVTXT
-            // 
-            this.huongDanHVTXT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(59)))), ((int)(((byte)(122)))));
-            this.huongDanHVTXT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.huongDanHVTXT.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.huongDanHVTXT.Location = new System.Drawing.Point(1194, 642);
-            this.huongDanHVTXT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.huongDanHVTXT.Multiline = true;
-            this.huongDanHVTXT.Name = "huongDanHVTXT";
-            this.huongDanHVTXT.ReadOnly = true;
-            this.huongDanHVTXT.Size = new System.Drawing.Size(462, 186);
-            this.huongDanHVTXT.TabIndex = 16;
-            this.huongDanHVTXT.Text = "Hover nút bất kì để hiện hướng dẫn";
-            this.huongDanHVTXT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // dgvHV
             // 
@@ -1032,7 +1001,8 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(1178, 528);
+            this.pictureBox1.Image = global::TKHT.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(1575, 749);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(141, 140);
@@ -1060,7 +1030,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(1724, 898);
+            this.tabPage1.Size = new System.Drawing.Size(1724, 901);
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "Môn học";
             // 
@@ -1302,7 +1272,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage3.Size = new System.Drawing.Size(1724, 898);
+            this.tabPage3.Size = new System.Drawing.Size(1724, 901);
             this.tabPage3.TabIndex = 5;
             this.tabPage3.Text = "Điểm Thi";
             // 
@@ -1585,7 +1555,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 15, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1804, 46);
+            this.menuStrip1.Size = new System.Drawing.Size(1773, 46);
             this.menuStrip1.TabIndex = 59;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -1614,12 +1584,12 @@
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(28)))), ((int)(((byte)(104)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.textBox1.Location = new System.Drawing.Point(0, 43);
+            this.textBox1.Location = new System.Drawing.Point(0, -2);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(1804, 1071);
+            this.textBox1.Size = new System.Drawing.Size(1773, 1071);
             this.textBox1.TabIndex = 60;
             // 
             // label1
@@ -1662,7 +1632,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1804, 1114);
+            this.ClientSize = new System.Drawing.Size(1773, 1069);
             this.Controls.Add(this.txtHelp);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.menuStrip1);
@@ -1789,8 +1759,6 @@
         private System.Windows.Forms.DataGridView dgvLop;
         private System.Windows.Forms.TabControl txtHelp;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox huongDanHVTXT;
         private System.Windows.Forms.DataGridView dgvHV;
         private System.Windows.Forms.Button xemhvBTN;
         private System.Windows.Forms.Panel panel9;

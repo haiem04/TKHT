@@ -55,7 +55,6 @@
             this.paneltongsl = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.dgvAD = new System.Windows.Forms.DataGridView();
-            this.huongDanHVTXT = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.hocPhanTXT = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -387,21 +386,6 @@
             this.dgvAD.Size = new System.Drawing.Size(1329, 454);
             this.dgvAD.TabIndex = 102;
             // 
-            // huongDanHVTXT
-            // 
-            this.huongDanHVTXT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(59)))), ((int)(((byte)(122)))));
-            this.huongDanHVTXT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.huongDanHVTXT.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.huongDanHVTXT.Location = new System.Drawing.Point(-4, 563);
-            this.huongDanHVTXT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.huongDanHVTXT.Multiline = true;
-            this.huongDanHVTXT.Name = "huongDanHVTXT";
-            this.huongDanHVTXT.ReadOnly = true;
-            this.huongDanHVTXT.Size = new System.Drawing.Size(298, 252);
-            this.huongDanHVTXT.TabIndex = 105;
-            this.huongDanHVTXT.Text = "Hover nút bất kì để hiện hướng dẫn";
-            this.huongDanHVTXT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(59)))), ((int)(((byte)(122)))));
@@ -440,7 +424,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(28)))), ((int)(((byte)(104)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Snow;
-            this.label4.Location = new System.Drawing.Point(25, 261);
+            this.label4.Location = new System.Drawing.Point(36, 374);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(270, 47);
@@ -453,7 +437,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(28)))), ((int)(((byte)(104)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Snow;
-            this.label3.Location = new System.Drawing.Point(28, 223);
+            this.label3.Location = new System.Drawing.Point(39, 336);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(158, 37);
@@ -745,7 +729,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(28)))), ((int)(((byte)(104)))));
             this.pictureBox1.Image = global::TKHT.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 203);
+            this.pictureBox1.Location = new System.Drawing.Point(46, 362);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(249, 312);
@@ -768,7 +752,6 @@
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.paneltongsl);
             this.Controls.Add(this.dgvAD);
-            this.Controls.Add(this.huongDanHVTXT);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label4);
@@ -853,7 +836,6 @@
         private System.Windows.Forms.Panel paneltongsl;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.DataGridView dgvAD;
-        private System.Windows.Forms.TextBox huongDanHVTXT;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox hocPhanTXT;
         private System.Windows.Forms.Panel panel4;

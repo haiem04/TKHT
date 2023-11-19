@@ -87,6 +87,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -565,10 +566,11 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.adminToolStripMenuItem,
             this.toolStripMenuItem1,
-            this.logoutToolStripMenuItem});
+            this.logoutToolStripMenuItem,
+            this.toolStripMenuItem2});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(193, 1083);
+            this.menuStrip1.Size = new System.Drawing.Size(196, 1083);
             this.menuStrip1.TabIndex = 78;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -737,6 +739,15 @@
             this.pictureBox1.TabIndex = 103;
             this.pictureBox1.TabStop = false;
             // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.ForeColor = System.Drawing.Color.Snow;
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 29);
+            this.toolStripMenuItem2.Text = "History Test";
+            this.toolStripMenuItem2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
             // FAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -868,5 +879,6 @@
         private System.Windows.Forms.TextBox ngheNghiepTXT;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
     }
 }

@@ -16,5 +16,12 @@ namespace TKHT.PView
         {
             InitializeComponent();
         }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FHistory f = new FHistory();
+            f.Show();
+        }
     }
 }

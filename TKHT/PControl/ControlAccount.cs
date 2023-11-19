@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
@@ -17,6 +18,7 @@ namespace TKHT.PControl
             if (acc != null)
             {
                 GlobalVar.studentInfo = acc.Student;
+                Debug.WriteLine(GlobalVar.studentInfo.id);
                 return true;
             }
             return false;

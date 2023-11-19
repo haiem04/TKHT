@@ -74,6 +74,8 @@
       <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
     <Compile Include="ControlDB.cs" />
+    <Compile Include="DTO\DTOCustomizeAttemptQuestion.cs" />
+    <Compile Include="DTO\DTOCustomzieTest.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,9 +98,16 @@
       <DependentUpon>Model2.edmx</DependentUpon>
     </Compile>
     <Compile Include="PControl\ControlAccount.cs" />
+    <Compile Include="PControl\ControlAttempt.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PUtil\GlobalVar.cs" />
+    <Compile Include="PView\FHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PView\FHistory.Designer.cs">
+      <DependentUpon>FHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="PView\FLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +125,12 @@
     </Compile>
     <Compile Include="PView\FManage.Designer.cs">
       <DependentUpon>FManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PView\FResultOfTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PView\FResultOfTest.Designer.cs">
+      <DependentUpon>FResultOfTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Question.cs">
       <DependentUpon>Model2.tt</DependentUpon>
@@ -151,11 +166,17 @@
     <EmbeddedResource Include="PView\FAdmin.resx">
       <DependentUpon>FAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PView\FHistory.resx">
+      <DependentUpon>FHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PView\FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PView\FManage.resx">
       <DependentUpon>FManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PView\FResultOfTest.resx">
+      <DependentUpon>FResultOfTest.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model2.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

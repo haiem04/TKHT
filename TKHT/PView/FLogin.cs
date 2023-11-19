@@ -36,5 +36,24 @@ namespace TKHT.PView
         {
 
         }
+
+
+
+        private void button2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)Keys.Enter)
+            {
+                if (ControlAccount.login(textBox1.Text, textBox2.Text))
+                {
+                    this.Hide();
+                    FAdmin f = new FAdmin();
+                    f.Show();
+                }
+                else
+                {
+                    MessageBox.Show("sai tai khoan hoac mat khau", "thong bao", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }

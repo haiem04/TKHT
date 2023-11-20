@@ -32,5 +32,10 @@ namespace TKHT.PView
             label1.Text = $"Kết quả của bài kiểm tra {date}";
             dgvAttemptQestion.DataSource = ControlAttempt.getResultOfTest(attemptId) ?? new List<DTO.DTOCustomizeAttemptQuestion>();
         }
+
+        private void FResultOfTest_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

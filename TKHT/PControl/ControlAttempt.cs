@@ -8,6 +8,7 @@ namespace TKHT.PControl
     public class ControlAttempt : ControlDB
     {
         private static Student student = GlobalVar.studentInfo;
+
         public static List<DTOCustomzieTest> getTestByStudentAttemp()
         {
 
@@ -21,6 +22,7 @@ namespace TKHT.PControl
             }).ToList();
             return tests;
         }
+
         public static List<DTOCustomizeAttemptQuestion> getResultOfTest(int attemptId)
         {
             var result = db.Attempt_Question.Where(a => a.AttemptId == attemptId).Select(s => new DTOCustomizeAttemptQuestion
@@ -31,6 +33,18 @@ namespace TKHT.PControl
                 Answer = s.Answer,
                 CorrectAnswer = s.Question.CorrectAnswer,
                 ChapterName = s.Question.Chapter.ChapterName
+            }).ToList();
+            return result;
+        }
+
+        public static List<DTOAttempt> getAttemptsByStudentId(int studentId)
+        {
+            var result = db.Attempts.Where(a => a.StudentId == studentId).Select(s => new DTOAttempt
+            {
+                id = s.id,
+                Date = s.Date,
+                StudentId = (int)s.StudentId,
+                TestId = (int)s.TestId,
             }).ToList();
             return result;
         }

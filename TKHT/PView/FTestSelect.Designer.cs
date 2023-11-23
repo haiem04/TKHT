@@ -46,7 +46,7 @@
             this.managerToolStripMenuItem.Margin = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.managerToolStripMenuItem.Name = "managerToolStripMenuItem";
             this.managerToolStripMenuItem.Padding = new System.Windows.Forms.Padding(40, 0, 4, 0);
-            this.managerToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
+            this.managerToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
             this.managerToolStripMenuItem.Text = "Admin";
             // 
             // toolStripMenuItem1
@@ -56,7 +56,7 @@
             this.toolStripMenuItem1.Margin = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(40, 0, 4, 0);
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(96, 20);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(108, 24);
             this.toolStripMenuItem1.Text = "Logout";
             // 
             // manageAccountsToolStripMenuItem
@@ -66,7 +66,7 @@
             this.manageAccountsToolStripMenuItem.Margin = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.manageAccountsToolStripMenuItem.Name = "manageAccountsToolStripMenuItem";
             this.manageAccountsToolStripMenuItem.Padding = new System.Windows.Forms.Padding(10, 0, 4, 0);
-            this.manageAccountsToolStripMenuItem.Size = new System.Drawing.Size(133, 20);
+            this.manageAccountsToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
             this.manageAccountsToolStripMenuItem.Text = "Manage Accounts";
             // 
             // menuStrip1
@@ -79,8 +79,8 @@
             this.manageAccountsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 10, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(797, 31);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 12, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(1063, 37);
             this.menuStrip1.TabIndex = 117;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -90,10 +90,11 @@
             this.dgvTests.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(59)))), ((int)(((byte)(122)))));
             this.dgvTests.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvTests.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTests.Location = new System.Drawing.Point(21, 110);
+            this.dgvTests.Location = new System.Drawing.Point(28, 135);
+            this.dgvTests.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvTests.Name = "dgvTests";
             this.dgvTests.RowHeadersWidth = 51;
-            this.dgvTests.Size = new System.Drawing.Size(753, 421);
+            this.dgvTests.Size = new System.Drawing.Size(1004, 518);
             this.dgvTests.TabIndex = 124;
             this.dgvTests.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTests_CellContentDoubleClick);
             // 
@@ -102,10 +103,10 @@
             this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(59)))), ((int)(((byte)(122)))));
             this.comboBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(98, 66);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Location = new System.Drawing.Point(131, 81);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(137, 21);
+            this.comboBox1.Size = new System.Drawing.Size(181, 24);
             this.comboBox1.TabIndex = 125;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -115,24 +116,25 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox1.Location = new System.Drawing.Point(21, 67);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Location = new System.Drawing.Point(28, 82);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(72, 19);
+            this.textBox1.Size = new System.Drawing.Size(96, 23);
             this.textBox1.TabIndex = 126;
             this.textBox1.Text = "Subject: ";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // FTestSelect
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(28)))), ((int)(((byte)(104)))));
-            this.ClientSize = new System.Drawing.Size(797, 554);
+            this.ClientSize = new System.Drawing.Size(1063, 682);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dgvTests);
             this.Controls.Add(this.menuStrip1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FTestSelect";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);

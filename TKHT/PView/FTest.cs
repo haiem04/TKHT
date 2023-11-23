@@ -20,6 +20,8 @@ namespace TKHT.PView
         {
             InitializeComponent();
             questions = ControlQuestion.getQuestionsByTestId(1);
+            pageNumberTxt.Text = "1";
+
         }
 
 
@@ -107,6 +109,7 @@ namespace TKHT.PView
             {
                 page++;
                 LoadQuestionsForPage(page);
+                pageNumberTxt.Text = (page + 1).ToString();
             }
             else
             {
@@ -121,11 +124,11 @@ namespace TKHT.PView
             { 
                 LoadQuestionsForPage(page);
             }
+            pageNumberTxt.Text = (page + 1).ToString();
         }
 
         private void submitTestButtonClick(object sender, EventArgs e)
         {
-            // Your code for handling the submit button click event
         }
     }
 }

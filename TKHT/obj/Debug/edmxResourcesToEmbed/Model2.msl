@@ -96,6 +96,8 @@
     <EntitySetMapping Name="Tests">
       <EntityTypeMapping TypeName="TKHTModel.Test">
         <MappingFragment StoreEntitySet="Test">
+          <ScalarProperty Name="MaxAttempts" ColumnName="MaxAttempts" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="Date" ColumnName="Date" />
           <ScalarProperty Name="Name" ColumnName="Name" />

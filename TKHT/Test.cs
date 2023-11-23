@@ -26,6 +26,8 @@ namespace TKHT
         public string Name { get; set; }
         public Nullable<int> Type { get; set; }
         public Nullable<int> SubjectId { get; set; }
+        public Nullable<int> Duration { get; set; }
+        public Nullable<int> MaxAttempts { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Attempt> Attempts { get; set; }

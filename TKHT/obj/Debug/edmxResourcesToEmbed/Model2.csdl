@@ -115,6 +115,8 @@
     <NavigationProperty Name="Attempts" Relationship="Self.FK__Attempt__TestId__628FA481" FromRole="Test" ToRole="Attempt" />
     <NavigationProperty Name="Subject" Relationship="Self.FK_test_subject" FromRole="Test" ToRole="Subject" />
     <NavigationProperty Name="Questions" Relationship="Self.Test_Question" FromRole="Test" ToRole="Question" />
+    <Property Name="Duration" Type="Int32" />
+    <Property Name="MaxAttempts" Type="Int32" />
   </EntityType>
   <Association Name="FK_Account_Student">
     <End Role="Student" Type="Self.Student" Multiplicity="0..1" />

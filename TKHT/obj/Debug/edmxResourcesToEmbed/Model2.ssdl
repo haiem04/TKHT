@@ -100,6 +100,8 @@
     <Property Name="Date" Type="datetime" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
     <Property Name="Type" Type="int" />
+    <Property Name="Duration" Type="int" />
+    <Property Name="MaxAttempts" Type="int" />
     <Property Name="SubjectId" Type="int" />
   </EntityType>
   <EntityType Name="Test_Question">
@@ -110,7 +112,7 @@
     <Property Name="QuestionId" Type="int" Nullable="false" />
     <Property Name="TestId" Type="int" Nullable="false" />
   </EntityType>
-  <Association Name="FK__Attempt__Student__619B8048">
+  <Association Name="FK__Attempt__Student__184C96B4">
     <End Role="Student" Type="Self.Student" Multiplicity="0..1" />
     <End Role="Attempt" Type="Self.Attempt" Multiplicity="*" />
     <ReferentialConstraint>
@@ -122,7 +124,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Attempt__TestId__628FA481">
+  <Association Name="FK__Attempt__TestId__1940BAED">
     <End Role="Test" Type="Self.Test" Multiplicity="0..1" />
     <End Role="Attempt" Type="Self.Attempt" Multiplicity="*" />
     <ReferentialConstraint>
@@ -134,7 +136,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Attempt_Q__Attem__656C112C">
+  <Association Name="FK__Attempt_Q__Attem__1C1D2798">
     <End Role="Attempt" Type="Self.Attempt" Multiplicity="1" />
     <End Role="Attempt_Question" Type="Self.Attempt_Question" Multiplicity="*" />
     <ReferentialConstraint>
@@ -146,7 +148,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Attempt_Q__Quest__66603565">
+  <Association Name="FK__Attempt_Q__Quest__1D114BD1">
     <End Role="Question" Type="Self.Question" Multiplicity="1" />
     <End Role="Attempt_Question" Type="Self.Attempt_Question" Multiplicity="*" />
     <ReferentialConstraint>
@@ -158,7 +160,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Chapter__Subject__5812160E">
+  <Association Name="FK__Chapter__Subject__0EC32C7A">
     <End Role="Subject" Type="Self.Subject" Multiplicity="0..1" />
     <End Role="Chapter" Type="Self.Chapter" Multiplicity="*" />
     <ReferentialConstraint>
@@ -170,7 +172,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Question__Chapte__5AEE82B9">
+  <Association Name="FK__Question__Chapte__119F9925">
     <End Role="Chapter" Type="Self.Chapter" Multiplicity="0..1" />
     <End Role="Question" Type="Self.Question" Multiplicity="*" />
     <ReferentialConstraint>
@@ -182,7 +184,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Student__ClassId__4E88ABD4">
+  <Association Name="FK__Student__ClassId__0539C240">
     <End Role="Class" Type="Self.Class" Multiplicity="0..1" />
     <End Role="Student" Type="Self.Student" Multiplicity="*" />
     <ReferentialConstraint>
@@ -194,7 +196,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Subject_C__Class__693CA210">
+  <Association Name="FK__Subject_C__Class__1FEDB87C">
     <End Role="Class" Type="Self.Class" Multiplicity="1" />
     <End Role="Subject_Class" Type="Self.Subject_Class" Multiplicity="*" />
     <ReferentialConstraint>
@@ -206,7 +208,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Subject_C__Subje__6A30C649">
+  <Association Name="FK__Subject_C__Subje__20E1DCB5">
     <End Role="Subject" Type="Self.Subject" Multiplicity="1" />
     <End Role="Subject_Class" Type="Self.Subject_Class" Multiplicity="*" />
     <ReferentialConstraint>
@@ -218,7 +220,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Test_Ques__Quest__5DCAEF64">
+  <Association Name="FK__Test_Ques__Quest__147C05D0">
     <End Role="Question" Type="Self.Question" Multiplicity="1" />
     <End Role="Test_Question" Type="Self.Test_Question" Multiplicity="*" />
     <ReferentialConstraint>
@@ -230,7 +232,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Test_Ques__TestI__5EBF139D">
+  <Association Name="FK__Test_Ques__TestI__15702A09">
     <End Role="Test" Type="Self.Test" Multiplicity="1" />
     <End Role="Test_Question" Type="Self.Test_Question" Multiplicity="*" />
     <ReferentialConstraint>
@@ -310,47 +312,47 @@
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Test" EntityType="Self.Test" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Test_Question" EntityType="Self.Test_Question" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK__Attempt__Student__619B8048" Association="Self.FK__Attempt__Student__619B8048">
+    <AssociationSet Name="FK__Attempt__Student__184C96B4" Association="Self.FK__Attempt__Student__184C96B4">
       <End Role="Student" EntitySet="Student" />
       <End Role="Attempt" EntitySet="Attempt" />
     </AssociationSet>
-    <AssociationSet Name="FK__Attempt__TestId__628FA481" Association="Self.FK__Attempt__TestId__628FA481">
+    <AssociationSet Name="FK__Attempt__TestId__1940BAED" Association="Self.FK__Attempt__TestId__1940BAED">
       <End Role="Test" EntitySet="Test" />
       <End Role="Attempt" EntitySet="Attempt" />
     </AssociationSet>
-    <AssociationSet Name="FK__Attempt_Q__Attem__656C112C" Association="Self.FK__Attempt_Q__Attem__656C112C">
+    <AssociationSet Name="FK__Attempt_Q__Attem__1C1D2798" Association="Self.FK__Attempt_Q__Attem__1C1D2798">
       <End Role="Attempt" EntitySet="Attempt" />
       <End Role="Attempt_Question" EntitySet="Attempt_Question" />
     </AssociationSet>
-    <AssociationSet Name="FK__Attempt_Q__Quest__66603565" Association="Self.FK__Attempt_Q__Quest__66603565">
+    <AssociationSet Name="FK__Attempt_Q__Quest__1D114BD1" Association="Self.FK__Attempt_Q__Quest__1D114BD1">
       <End Role="Question" EntitySet="Question" />
       <End Role="Attempt_Question" EntitySet="Attempt_Question" />
     </AssociationSet>
-    <AssociationSet Name="FK__Chapter__Subject__5812160E" Association="Self.FK__Chapter__Subject__5812160E">
+    <AssociationSet Name="FK__Chapter__Subject__0EC32C7A" Association="Self.FK__Chapter__Subject__0EC32C7A">
       <End Role="Subject" EntitySet="Subject" />
       <End Role="Chapter" EntitySet="Chapter" />
     </AssociationSet>
-    <AssociationSet Name="FK__Question__Chapte__5AEE82B9" Association="Self.FK__Question__Chapte__5AEE82B9">
+    <AssociationSet Name="FK__Question__Chapte__119F9925" Association="Self.FK__Question__Chapte__119F9925">
       <End Role="Chapter" EntitySet="Chapter" />
       <End Role="Question" EntitySet="Question" />
     </AssociationSet>
-    <AssociationSet Name="FK__Student__ClassId__4E88ABD4" Association="Self.FK__Student__ClassId__4E88ABD4">
+    <AssociationSet Name="FK__Student__ClassId__0539C240" Association="Self.FK__Student__ClassId__0539C240">
       <End Role="Class" EntitySet="Class" />
       <End Role="Student" EntitySet="Student" />
     </AssociationSet>
-    <AssociationSet Name="FK__Subject_C__Class__693CA210" Association="Self.FK__Subject_C__Class__693CA210">
+    <AssociationSet Name="FK__Subject_C__Class__1FEDB87C" Association="Self.FK__Subject_C__Class__1FEDB87C">
       <End Role="Class" EntitySet="Class" />
       <End Role="Subject_Class" EntitySet="Subject_Class" />
     </AssociationSet>
-    <AssociationSet Name="FK__Subject_C__Subje__6A30C649" Association="Self.FK__Subject_C__Subje__6A30C649">
+    <AssociationSet Name="FK__Subject_C__Subje__20E1DCB5" Association="Self.FK__Subject_C__Subje__20E1DCB5">
       <End Role="Subject" EntitySet="Subject" />
       <End Role="Subject_Class" EntitySet="Subject_Class" />
     </AssociationSet>
-    <AssociationSet Name="FK__Test_Ques__Quest__5DCAEF64" Association="Self.FK__Test_Ques__Quest__5DCAEF64">
+    <AssociationSet Name="FK__Test_Ques__Quest__147C05D0" Association="Self.FK__Test_Ques__Quest__147C05D0">
       <End Role="Question" EntitySet="Question" />
       <End Role="Test_Question" EntitySet="Test_Question" />
     </AssociationSet>
-    <AssociationSet Name="FK__Test_Ques__TestI__5EBF139D" Association="Self.FK__Test_Ques__TestI__5EBF139D">
+    <AssociationSet Name="FK__Test_Ques__TestI__15702A09" Association="Self.FK__Test_Ques__TestI__15702A09">
       <End Role="Test" EntitySet="Test" />
       <End Role="Test_Question" EntitySet="Test_Question" />
     </AssociationSet>

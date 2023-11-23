@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/.vs/TKHT/v17/.suo
+/.gitignore
+/TKHT/obj/Debug/TKHT.csproj.AssemblyReference.cache

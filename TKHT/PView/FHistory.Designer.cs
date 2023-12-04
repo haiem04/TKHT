@@ -31,7 +31,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.managerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.manageAccountsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgvHistory = new System.Windows.Forms.DataGridView();
             this.AttemptID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,16 +60,14 @@
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(28)))), ((int)(((byte)(104)))));
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.managerToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.manageAccountsToolStripMenuItem});
+            this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 15, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1712, 46);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 12, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1522, 38);
             this.menuStrip1.TabIndex = 60;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -81,8 +78,9 @@
             this.managerToolStripMenuItem.Margin = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.managerToolStripMenuItem.Name = "managerToolStripMenuItem";
             this.managerToolStripMenuItem.Padding = new System.Windows.Forms.Padding(40, 0, 4, 0);
-            this.managerToolStripMenuItem.Size = new System.Drawing.Size(116, 29);
+            this.managerToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
             this.managerToolStripMenuItem.Text = "Admin";
+            this.managerToolStripMenuItem.Click += new System.EventHandler(this.managerToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -91,18 +89,9 @@
             this.toolStripMenuItem1.Margin = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(40, 0, 4, 0);
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(120, 29);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(108, 24);
             this.toolStripMenuItem1.Text = "Logout";
-            // 
-            // manageAccountsToolStripMenuItem
-            // 
-            this.manageAccountsToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.manageAccountsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.manageAccountsToolStripMenuItem.Margin = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.manageAccountsToolStripMenuItem.Name = "manageAccountsToolStripMenuItem";
-            this.manageAccountsToolStripMenuItem.Padding = new System.Windows.Forms.Padding(10, 0, 4, 0);
-            this.manageAccountsToolStripMenuItem.Size = new System.Drawing.Size(189, 29);
-            this.manageAccountsToolStripMenuItem.Text = "Manage Accounts";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // dgvHistory
             // 
@@ -115,11 +104,11 @@
             this.Date,
             this.Type,
             this.Subject});
-            this.dgvHistory.Location = new System.Drawing.Point(32, 184);
-            this.dgvHistory.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgvHistory.Location = new System.Drawing.Point(28, 147);
+            this.dgvHistory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvHistory.Name = "dgvHistory";
             this.dgvHistory.RowHeadersWidth = 51;
-            this.dgvHistory.Size = new System.Drawing.Size(1130, 705);
+            this.dgvHistory.Size = new System.Drawing.Size(1004, 564);
             this.dgvHistory.TabIndex = 115;
             this.dgvHistory.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHistory_CellClick);
             this.dgvHistory.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHistory_CellDoubleClick);
@@ -156,10 +145,10 @@
             // 
             this.panel4.Controls.Add(this.DienthoaiSV);
             this.panel4.Controls.Add(this.tbLoai);
-            this.panel4.Location = new System.Drawing.Point(1187, 430);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel4.Location = new System.Drawing.Point(1055, 344);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(474, 48);
+            this.panel4.Size = new System.Drawing.Size(421, 38);
             this.panel4.TabIndex = 111;
             // 
             // DienthoaiSV
@@ -167,37 +156,37 @@
             this.DienthoaiSV.AutoSize = true;
             this.DienthoaiSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DienthoaiSV.ForeColor = System.Drawing.Color.White;
-            this.DienthoaiSV.Location = new System.Drawing.Point(30, 15);
+            this.DienthoaiSV.Location = new System.Drawing.Point(27, 12);
             this.DienthoaiSV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DienthoaiSV.Name = "DienthoaiSV";
-            this.DienthoaiSV.Size = new System.Drawing.Size(53, 25);
+            this.DienthoaiSV.Size = new System.Drawing.Size(45, 20);
             this.DienthoaiSV.TabIndex = 23;
             this.DienthoaiSV.Text = "Loại";
             // 
             // tbLoai
             // 
-            this.tbLoai.Location = new System.Drawing.Point(199, 2);
-            this.tbLoai.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbLoai.Location = new System.Drawing.Point(177, 2);
+            this.tbLoai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbLoai.Name = "tbLoai";
-            this.tbLoai.Size = new System.Drawing.Size(262, 26);
+            this.tbLoai.Size = new System.Drawing.Size(233, 22);
             this.tbLoai.TabIndex = 10;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.tbSubject);
             this.panel3.Controls.Add(this.KhoaSV);
-            this.panel3.Location = new System.Drawing.Point(1187, 296);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel3.Location = new System.Drawing.Point(1055, 237);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(474, 48);
+            this.panel3.Size = new System.Drawing.Size(421, 38);
             this.panel3.TabIndex = 109;
             // 
             // tbSubject
             // 
-            this.tbSubject.Location = new System.Drawing.Point(198, 6);
-            this.tbSubject.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbSubject.Location = new System.Drawing.Point(176, 5);
+            this.tbSubject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbSubject.Name = "tbSubject";
-            this.tbSubject.Size = new System.Drawing.Size(262, 26);
+            this.tbSubject.Size = new System.Drawing.Size(233, 22);
             this.tbSubject.TabIndex = 8;
             // 
             // KhoaSV
@@ -205,10 +194,10 @@
             this.KhoaSV.AutoSize = true;
             this.KhoaSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.KhoaSV.ForeColor = System.Drawing.Color.White;
-            this.KhoaSV.Location = new System.Drawing.Point(30, 11);
+            this.KhoaSV.Location = new System.Drawing.Point(27, 9);
             this.KhoaSV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.KhoaSV.Name = "KhoaSV";
-            this.KhoaSV.Size = new System.Drawing.Size(95, 25);
+            this.KhoaSV.Size = new System.Drawing.Size(80, 20);
             this.KhoaSV.TabIndex = 21;
             this.KhoaSV.Text = "Môn học";
             this.KhoaSV.Click += new System.EventHandler(this.KhoaSV_Click);
@@ -217,19 +206,19 @@
             // 
             this.panel2.Controls.Add(this.dpDate);
             this.panel2.Controls.Add(this.NameSV);
-            this.panel2.Location = new System.Drawing.Point(1187, 361);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel2.Location = new System.Drawing.Point(1055, 289);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(474, 48);
+            this.panel2.Size = new System.Drawing.Size(421, 38);
             this.panel2.TabIndex = 110;
             // 
             // dpDate
             // 
             this.dpDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dpDate.Location = new System.Drawing.Point(198, 5);
-            this.dpDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dpDate.Location = new System.Drawing.Point(176, 4);
+            this.dpDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dpDate.Name = "dpDate";
-            this.dpDate.Size = new System.Drawing.Size(264, 26);
+            this.dpDate.Size = new System.Drawing.Size(235, 22);
             this.dpDate.TabIndex = 9;
             // 
             // NameSV
@@ -237,19 +226,19 @@
             this.NameSV.AutoSize = true;
             this.NameSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameSV.ForeColor = System.Drawing.Color.White;
-            this.NameSV.Location = new System.Drawing.Point(30, 11);
+            this.NameSV.Location = new System.Drawing.Point(27, 9);
             this.NameSV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameSV.Name = "NameSV";
-            this.NameSV.Size = new System.Drawing.Size(137, 25);
+            this.NameSV.Size = new System.Drawing.Size(118, 20);
             this.NameSV.TabIndex = 22;
             this.NameSV.Text = "Ngày làm bài";
             // 
             // tbFind
             // 
-            this.tbFind.Location = new System.Drawing.Point(1187, 184);
-            this.tbFind.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbFind.Location = new System.Drawing.Point(1055, 147);
+            this.tbFind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbFind.Name = "tbFind";
-            this.tbFind.Size = new System.Drawing.Size(471, 26);
+            this.tbFind.Size = new System.Drawing.Size(419, 22);
             this.tbFind.TabIndex = 106;
             this.tbFind.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbFind_KeyPress);
             // 
@@ -257,10 +246,10 @@
             // 
             this.timKiemHVBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(59)))), ((int)(((byte)(122)))));
             this.timKiemHVBTN.ForeColor = System.Drawing.Color.White;
-            this.timKiemHVBTN.Location = new System.Drawing.Point(1187, 234);
-            this.timKiemHVBTN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.timKiemHVBTN.Location = new System.Drawing.Point(1055, 187);
+            this.timKiemHVBTN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.timKiemHVBTN.Name = "timKiemHVBTN";
-            this.timKiemHVBTN.Size = new System.Drawing.Size(230, 54);
+            this.timKiemHVBTN.Size = new System.Drawing.Size(204, 43);
             this.timKiemHVBTN.TabIndex = 107;
             this.timKiemHVBTN.Text = "Tìm kiếm";
             this.timKiemHVBTN.UseVisualStyleBackColor = false;
@@ -270,10 +259,10 @@
             // 
             this.lietkehvBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(59)))), ((int)(((byte)(122)))));
             this.lietkehvBTN.ForeColor = System.Drawing.Color.White;
-            this.lietkehvBTN.Location = new System.Drawing.Point(32, 93);
-            this.lietkehvBTN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lietkehvBTN.Location = new System.Drawing.Point(28, 74);
+            this.lietkehvBTN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lietkehvBTN.Name = "lietkehvBTN";
-            this.lietkehvBTN.Size = new System.Drawing.Size(145, 54);
+            this.lietkehvBTN.Size = new System.Drawing.Size(129, 43);
             this.lietkehvBTN.TabIndex = 105;
             this.lietkehvBTN.Text = "Sắp xếp";
             this.lietkehvBTN.UseVisualStyleBackColor = false;
@@ -283,20 +272,20 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::TKHT.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(1558, 780);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(1385, 624);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(141, 140);
+            this.pictureBox1.Size = new System.Drawing.Size(125, 112);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 116;
             this.pictureBox1.TabStop = false;
             // 
             // FHistory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(28)))), ((int)(((byte)(104)))));
-            this.ClientSize = new System.Drawing.Size(1712, 934);
+            this.ClientSize = new System.Drawing.Size(1522, 747);
             this.Controls.Add(this.dgvHistory);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -306,6 +295,7 @@
             this.Controls.Add(this.lietkehvBTN);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FHistory";
             this.Text = "FHistory";
             this.menuStrip1.ResumeLayout(false);
@@ -328,7 +318,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem managerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem manageAccountsToolStripMenuItem;
         private System.Windows.Forms.DataGridView dgvHistory;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label DienthoaiSV;

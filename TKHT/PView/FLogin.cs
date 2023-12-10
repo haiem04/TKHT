@@ -25,7 +25,7 @@ namespace TKHT.PView
                 this.Hide();
                 FAdmin f = new FAdmin();
                 f.Show();
-            }
+            }   
             else
             {
                 MessageBox.Show("sai tai khoan hoac mat khau", "thong bao", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -34,7 +34,7 @@ namespace TKHT.PView
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+        
         }
 
 

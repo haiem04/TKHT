@@ -16,6 +16,7 @@ namespace TKHT.PView
     {
         public int attemptId;
         public string date;
+        private List<DTO.DTOCustomizeAttemptQuestion> list = new List<DTO.DTOCustomizeAttemptQuestion>();
         public FResultOfTest(int attemptId, string date)
         {
             InitializeComponent();
@@ -28,9 +29,11 @@ namespace TKHT.PView
         }
         private void load()
         {
-            Debug.WriteLine(date);
             label1.Text = $"Kết quả của bài kiểm tra {date}";
-            dgvAttemptQestion.DataSource = ControlAttempt.getResultOfTest(attemptId) ?? new List<DTO.DTOCustomizeAttemptQuestion>();
+            list = ControlAttempt.getResultOfTest(attemptId);
+            int mark = list.Count(x => x.Answer == x.CorrectAnswer);
+            diemkq.Text = $"Kết quả: {mark}/{list.Count()}";
+            dgvAttemptQestion.DataSource = list;
         }
 
         private void FResultOfTest_Load(object sender, EventArgs e)

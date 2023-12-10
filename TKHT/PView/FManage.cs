@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TKHT.PUtil;
 
 namespace TKHT.PView
 {
@@ -15,6 +16,14 @@ namespace TKHT.PView
         public FManage()
         {
             InitializeComponent();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FLogin f = new FLogin();
+            GlobalVar.studentInfo = null;
+            f.Show();
         }
     }
 }

@@ -18,7 +18,6 @@ namespace TKHT.PControl
             if (acc != null)
             {
                 GlobalVar.studentInfo = acc.Student;
-                Debug.WriteLine(GlobalVar.studentInfo.id);
                 return true;
             }
             return false;

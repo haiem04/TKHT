@@ -6,7 +6,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{0DBCA97D-A2C5-4BD2-9FDE-B9B1B98C9471}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>TKHT</RootNamespace>
     <AssemblyName>TKHT</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -34,6 +34,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -74,6 +77,9 @@
       <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
     <Compile Include="ControlDB.cs" />
+    <Compile Include="DTO\DTOSubject.cs" />
+    <Compile Include="DTO\DTOTest.cs" />
+    <Compile Include="DTO\DTOAttempt.cs" />
     <Compile Include="DTO\DTOCustomizeAttemptQuestion.cs" />
     <Compile Include="DTO\DTOCustomzieTest.cs" />
     <Compile Include="DTO\DTOStudent.cs" />
@@ -98,7 +104,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model2.edmx</DependentUpon>
     </Compile>
+    <Compile Include="PControl\ControlQuestion.cs" />
     <Compile Include="PControl\ControlAccount.cs" />
+    <Compile Include="PControl\ControlSubject.cs" />
+    <Compile Include="PControl\ControlTest.cs" />
     <Compile Include="PControl\ControlAttempt.cs" />
     <Compile Include="PControl\ControlClass.cs" />
     <Compile Include="PControl\ControlHocVien.cs" />
@@ -129,6 +138,18 @@
     </Compile>
     <Compile Include="PView\FManage.Designer.cs">
       <DependentUpon>FManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PView\FTestSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PView\FTestSelect.Designer.cs">
+      <DependentUpon>FTestSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PView\FTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PView\FTest.Designer.cs">
+      <DependentUpon>FTest.cs</DependentUpon>
     </Compile>
     <Compile Include="PView\FResultOfTest.cs">
       <SubType>Form</SubType>
@@ -181,6 +202,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PView\FResultOfTest.resx">
       <DependentUpon>FResultOfTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PView\FTest.resx">
+      <DependentUpon>FTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PView\FTestSelect.resx">
+      <DependentUpon>FTestSelect.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model2.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

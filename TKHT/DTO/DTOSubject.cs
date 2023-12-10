@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TKHT.PUtil
+namespace TKHT.DTO
 {
-    public class GlobalVar
+    public class DTOSubject
     {
-        public static Student studentInfo;
-        public static int testDuration;
+        public int id { get; set; }
+
+        public string SubjectName { get; set; }
     }
 }

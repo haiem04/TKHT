@@ -35,6 +35,7 @@
             this.Answer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CorrectAnswer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
+            this.diemkq = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAttemptQestion)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,12 +51,11 @@
             this.Question,
             this.Answer,
             this.CorrectAnswer});
-            this.dgvAttemptQestion.Location = new System.Drawing.Point(16, 218);
-            this.dgvAttemptQestion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvAttemptQestion.Location = new System.Drawing.Point(12, 174);
             this.dgvAttemptQestion.Name = "dgvAttemptQestion";
             this.dgvAttemptQestion.RowHeadersWidth = 62;
             this.dgvAttemptQestion.RowTemplate.Height = 28;
-            this.dgvAttemptQestion.Size = new System.Drawing.Size(1840, 1175);
+            this.dgvAttemptQestion.Size = new System.Drawing.Size(1380, 940);
             this.dgvAttemptQestion.TabIndex = 0;
             // 
             // id
@@ -98,22 +98,32 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(16, 86);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(12, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 44);
+            this.label1.Size = new System.Drawing.Size(98, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "label1";
             // 
+            // diemkq
+            // 
+            this.diemkq.AutoSize = true;
+            this.diemkq.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diemkq.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.diemkq.Location = new System.Drawing.Point(804, 69);
+            this.diemkq.Name = "diemkq";
+            this.diemkq.Size = new System.Drawing.Size(98, 32);
+            this.diemkq.TabIndex = 2;
+            this.diemkq.Text = "label2";
+            // 
             // FResultOfTest
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(28)))), ((int)(((byte)(104)))));
-            this.ClientSize = new System.Drawing.Size(1872, 1408);
+            this.ClientSize = new System.Drawing.Size(1404, 1126);
+            this.Controls.Add(this.diemkq);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvAttemptQestion);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FResultOfTest";
             this.Text = "FResultOfTest";
             this.Load += new System.EventHandler(this.FResultOfTest_Load);
@@ -132,5 +142,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Question;
         private System.Windows.Forms.DataGridViewTextBoxColumn Answer;
         private System.Windows.Forms.DataGridViewTextBoxColumn CorrectAnswer;
+        private System.Windows.Forms.Label diemkq;
     }
 }

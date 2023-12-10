@@ -24,6 +24,12 @@ namespace TKHT.PControl
             }).ToList();
             return result;
         }
+
+        public static int getTestDurationByTestId(int testId)
+        {
+            var result = db.Tests.First(a => a.id == testId);
+            return (int)result.Duration;
+        }
     }
 
 }

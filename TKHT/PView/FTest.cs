@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Globalization;
+using System.Linq;
+using System.Security.Cryptography;
 using System.Windows.Forms;
 using TKHT.PControl;
 
@@ -8,22 +11,28 @@ namespace TKHT.PView
 {
     public partial class FTest : Form
     {
-        private List<Question> questions = new List<Question>{};
-
+        public int testId { get; set; }
+        public int studentId { get; set; }
+        private List<Question> questions = new List<Question> { };
         private List<Panel> questionPanels = new List<Panel>();
-
+        private int timeRemainingInSeconds ; 
         private int page = 0;
-
         private const int QuestionsPerPage = 4;
+        private  Attempt attempt;
 
-        public FTest()
-        {
+        // Dictionary to store selected answers for each question
+        private Dictionary<int, string> selectedAnswers = new Dictionary<int, string>();
+
+        public FTest(int _testId, int _studentId)
+        {   
             InitializeComponent();
-            questions = ControlQuestion.getQuestionsByTestId(1);
+            timeRemainingInSeconds = ControlTest.getTestDurationByTestId(_testId);
+            questions = ControlQuestion.getQuestionsByTestId(_testId);
             pageNumberTxt.Text = "1";
-
+            testId = _testId;
+            studentId = _studentId;
+            attempt = ControlAttempt.createAttempt(studentId, testId);
         }
-
 
         private void FTest_Load(object sender, EventArgs e)
         {
@@ -47,7 +56,7 @@ namespace TKHT.PView
                 int y = (i / 2) * (questionPanel.Height + 10);
 
                 questionPanel.Location = new Point(x, y);
-                questionPanel.Controls.Add(CreateRadioButton(questions[currentPage * QuestionsPerPage + i], 0, 54));
+                questionPanel.Controls.Add(CreateRadioButton(questions[currentPage * QuestionsPerPage + i], currentPage, i, 0, 54));
 
                 TextBox questionTitle = new TextBox();
                 questionTitle.BackColor = Color.FromArgb(39, 59, 122);
@@ -63,10 +72,36 @@ namespace TKHT.PView
                 questionPanel.Controls.Add(questionTitle);
                 questionPanels.Add(questionPanel);
                 panel1.Controls.Add(questionPanel);
+
+                // Restore saved answers for the current page
+                int storedQuestionIndex = currentPage * QuestionsPerPage + i;
+                if (selectedAnswers.ContainsKey(storedQuestionIndex))
+                {
+                    string selectedAnswerText = selectedAnswers[storedQuestionIndex];
+
+                    Panel currentPanel = questionPanels[i];
+                    foreach (Control control in currentPanel.Controls)
+                    {   
+                        if (control is Panel)
+                        {
+                            foreach (Control _control in control.Controls)
+                            {
+                                if (_control is RadioButton radioButton && radioButton.Text == selectedAnswerText)
+                                {
+                                    radioButton.Checked = true;
+                                    break;
+                                }
+                            }
+                                
+                        }
+                        
+                    }
+                }
             }
         }
 
-        private Panel CreateRadioButton(Question question, int xOffset, int yOffset)
+
+        private Panel CreateRadioButton(Question question, int currentPage, int questionIndex, int xOffset, int yOffset)
         {
             Panel radioButtonPanel = new Panel();
             radioButtonPanel.Location = new Point(11, yOffset); // Fixed yOffset for the entire panel
@@ -80,11 +115,20 @@ namespace TKHT.PView
                 radioButton.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
                 radioButton.ForeColor = SystemColors.ButtonHighlight;
                 radioButton.Location = new Point(0, i * 25); // Adjusted the position relative to the panel
-                radioButton.Name = $"answer{i + 1}";
+                radioButton.Tag = currentPage * QuestionsPerPage + i;
                 radioButton.Size = new Size(100, 21);
                 radioButton.TabStop = true;
                 radioButton.Text = answerTexts[i];
                 radioButton.UseVisualStyleBackColor = true;
+
+                radioButton.CheckedChanged += (s, e) =>
+                {
+                    if (radioButton.Checked)
+                    {
+                        // Update the dictionary with the selected answer
+                        selectedAnswers[(currentPage * QuestionsPerPage) + questionIndex] = radioButton.Text;
+                    }
+                };
 
                 radioButtonPanel.Controls.Add(radioButton);
             }
@@ -120,15 +164,50 @@ namespace TKHT.PView
         private void prevBtn_Click(object sender, EventArgs e)
         {
             page = Math.Max(0, page - 1);
-            if (page >= 0) 
-            { 
+            if (page >= 0)
+            {
                 LoadQuestionsForPage(page);
             }
             pageNumberTxt.Text = (page + 1).ToString();
         }
 
+
+
         private void submitTestButtonClick(object sender, EventArgs e)
         {
+            submitAttempt();
+        }
+
+        public void submitAttempt()
+        {
+            List<string> answers = selectedAnswers.Values.ToList();
+            ControlAttempt.createAttemptQuestion(attempt, questions, answers);
+            MessageBox.Show("Test attempt submitted!");
+
+            List<string> orderedList = new List<string>();
+            for (int key = 1; key <= questions.Count; key++)
+            {
+                if (selectedAnswers.TryGetValue(key, out string value))
+                {
+                    orderedList.Add(value);
+                }
+                else
+                {
+                    orderedList.Add("");
+                }
+            }
+            this.Hide();
+            FTestSelect f = new FTestSelect();
+            f.Show();
+        }
+
+        private void timeLeft_TextChanged(object sender, EventArgs e)
+        {
+            Console.WriteLine(timeLeft.Text);
+            if (timeLeft.Text == "00:00")
+            {
+                submitAttempt();
+            }
         }
     }
 }

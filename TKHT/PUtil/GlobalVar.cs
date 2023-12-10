@@ -9,5 +9,6 @@ namespace TKHT.PUtil
     public class GlobalVar
     {
         public static Student studentInfo;
+        public static int testDuration;
     }
 }

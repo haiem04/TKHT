@@ -15,8 +15,6 @@ namespace TKHT.PView
 {
     public partial class FTestSelect : Form
     {
-        private static Student student = GlobalVar.studentInfo;
-
 
         public FTestSelect()
         {
@@ -37,7 +35,7 @@ namespace TKHT.PView
 
         private void loadComboBox()
         {
-            List<DTOSubject> subjects = ControlSubject.getSubjectsByClassId(1);
+            List<DTOSubject> subjects = ControlSubject.getSubjectsByClassId((int)GlobalVar.studentInfo.ClassId);
             comboBox1.DataSource = subjects;
             comboBox1.DisplayMember = "SubjectName";
             comboBox1.ValueMember = "id";
@@ -47,7 +45,7 @@ namespace TKHT.PView
         {
 
         }
-
+            
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox1.SelectedItem != null)
@@ -65,9 +63,11 @@ namespace TKHT.PView
 
         private void dgvTests_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            int selectedTestId = Convert.ToInt32(dgvTests.Rows[e.RowIndex].Cells["id"].Value);
             this.Hide();
-            FTest f = new FTest();
+            FTest f = new FTest((int)selectedTestId, (int)GlobalVar.studentInfo.id);
             f.Show();
+
         }
     }
 }

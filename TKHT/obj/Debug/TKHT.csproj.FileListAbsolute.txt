@@ -39,3 +39,5 @@ C:\Users\ngson\source\repos\TKHT\TKHT\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\ngson\source\repos\TKHT\TKHT\bin\Debug\EntityFramework.xml
 C:\Users\ngson\source\repos\TKHT\TKHT\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\ngson\source\repos\TKHT\TKHT\obj\Debug\TKHT.csproj.CopyComplete
+C:\Users\ADMIN\source\repos\TKHT\TKHT\obj\Debug\TKHT.PView.FTest.resources
+C:\Users\ADMIN\source\repos\TKHT\TKHT\obj\Debug\TKHT.PView.FTestSelect.resources

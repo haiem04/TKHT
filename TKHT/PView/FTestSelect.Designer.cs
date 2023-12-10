@@ -30,7 +30,6 @@
         {
             this.managerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.manageAccountsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dgvTests = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -48,6 +47,7 @@
             this.managerToolStripMenuItem.Padding = new System.Windows.Forms.Padding(40, 0, 4, 0);
             this.managerToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
             this.managerToolStripMenuItem.Text = "Admin";
+            this.managerToolStripMenuItem.Click += new System.EventHandler(this.managerToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -58,16 +58,7 @@
             this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(40, 0, 4, 0);
             this.toolStripMenuItem1.Size = new System.Drawing.Size(108, 24);
             this.toolStripMenuItem1.Text = "Logout";
-            // 
-            // manageAccountsToolStripMenuItem
-            // 
-            this.manageAccountsToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.manageAccountsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.manageAccountsToolStripMenuItem.Margin = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.manageAccountsToolStripMenuItem.Name = "manageAccountsToolStripMenuItem";
-            this.manageAccountsToolStripMenuItem.Padding = new System.Windows.Forms.Padding(10, 0, 4, 0);
-            this.manageAccountsToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
-            this.manageAccountsToolStripMenuItem.Text = "Manage Accounts";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // menuStrip1
             // 
@@ -75,8 +66,7 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.managerToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.manageAccountsToolStripMenuItem});
+            this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 12, 0, 1);
@@ -91,7 +81,7 @@
             this.dgvTests.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvTests.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTests.Location = new System.Drawing.Point(28, 135);
-            this.dgvTests.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvTests.Margin = new System.Windows.Forms.Padding(4);
             this.dgvTests.Name = "dgvTests";
             this.dgvTests.RowHeadersWidth = 51;
             this.dgvTests.Size = new System.Drawing.Size(1004, 518);
@@ -134,7 +124,7 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dgvTests);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FTestSelect";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
@@ -148,7 +138,6 @@
         #endregion
         private System.Windows.Forms.ToolStripMenuItem managerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem manageAccountsToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.DataGridView dgvTests;
         private System.Windows.Forms.ComboBox comboBox1;

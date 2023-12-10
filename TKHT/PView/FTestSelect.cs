@@ -69,5 +69,25 @@ namespace TKHT.PView
             f.Show();
 
         }
+
+        private void managerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FAdmin f = new FAdmin();
+            f.Show();
+        }
+
+        private void manageAccountsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FLogin f = new FLogin();
+            GlobalVar.studentInfo = null;
+            f.Show();
+        }
     }
 }

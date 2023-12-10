@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TKHT.DTO;
 using TKHT.PControl;
+using TKHT.PUtil;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TKHT.PView
@@ -104,6 +105,26 @@ namespace TKHT.PView
             bool containsNumber = Regex.IsMatch(vFind, @"\d");
             var newList = containsNumber ? listDTOCustomzieTest.Where(x => x.Date.ToString().Contains(vFind)).ToList() : listDTOCustomzieTest.Where(x => x.Subject.Contains(vFind.ToLower())).ToList();
             dgvHistory.DataSource = newList;
+        }
+
+        private void manageAccountsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void managerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FAdmin f = new FAdmin();
+            f.Show();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FLogin f = new FLogin();
+            GlobalVar.studentInfo = null;
+            f.Show();
         }
     }
 }

@@ -180,6 +180,7 @@ namespace TKHT.PView
 
         public void submitAttempt()
         {
+            countdownTimer.Stop();
             List<string> answers = selectedAnswers.Values.ToList();
             ControlAttempt.createAttemptQuestion(attempt, questions, answers);
             MessageBox.Show("Test attempt submitted!");

@@ -26,6 +26,7 @@ namespace TKHT.PView
         public FTest(int _testId, int _studentId)
         {   
             InitializeComponent();
+            timeRemainingInSeconds = ControlTest.getTestDurationByTestId(_testId);
             questions = ControlQuestion.getQuestionsByTestId(_testId);
             pageNumberTxt.Text = "1";
             testId = _testId;

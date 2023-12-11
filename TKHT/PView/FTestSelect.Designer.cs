@@ -28,26 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.managerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dgvTests = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTests)).BeginInit();
             this.SuspendLayout();
-            // 
-            // managerToolStripMenuItem
-            // 
-            this.managerToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.managerToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.managerToolStripMenuItem.Margin = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.managerToolStripMenuItem.Name = "managerToolStripMenuItem";
-            this.managerToolStripMenuItem.Padding = new System.Windows.Forms.Padding(40, 0, 4, 0);
-            this.managerToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
-            this.managerToolStripMenuItem.Text = "Admin";
-            this.managerToolStripMenuItem.Click += new System.EventHandler(this.managerToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -65,7 +54,7 @@
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(28)))), ((int)(((byte)(104)))));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.managerToolStripMenuItem,
+            this.toolStripMenuItem2,
             this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -81,7 +70,7 @@
             this.dgvTests.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvTests.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTests.Location = new System.Drawing.Point(28, 135);
-            this.dgvTests.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvTests.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvTests.Name = "dgvTests";
             this.dgvTests.RowHeadersWidth = 51;
             this.dgvTests.Size = new System.Drawing.Size(1004, 518);
@@ -114,6 +103,17 @@
             this.textBox1.Text = "Subject: ";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.toolStripMenuItem2.Margin = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Padding = new System.Windows.Forms.Padding(40, 0, 4, 0);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(102, 24);
+            this.toolStripMenuItem2.Text = "Home";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
             // FTestSelect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -124,7 +124,7 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dgvTests);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FTestSelect";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
@@ -136,11 +136,11 @@
         }
 
         #endregion
-        private System.Windows.Forms.ToolStripMenuItem managerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.DataGridView dgvTests;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
     }
 }

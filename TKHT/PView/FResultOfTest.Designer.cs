@@ -51,11 +51,12 @@
             this.Question,
             this.Answer,
             this.CorrectAnswer});
-            this.dgvAttemptQestion.Location = new System.Drawing.Point(12, 174);
+            this.dgvAttemptQestion.Location = new System.Drawing.Point(11, 139);
+            this.dgvAttemptQestion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvAttemptQestion.Name = "dgvAttemptQestion";
             this.dgvAttemptQestion.RowHeadersWidth = 62;
             this.dgvAttemptQestion.RowTemplate.Height = 28;
-            this.dgvAttemptQestion.Size = new System.Drawing.Size(1380, 940);
+            this.dgvAttemptQestion.Size = new System.Drawing.Size(1227, 752);
             this.dgvAttemptQestion.TabIndex = 0;
             // 
             // id
@@ -98,9 +99,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(12, 69);
+            this.label1.Location = new System.Drawing.Point(11, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 32);
+            this.label1.Size = new System.Drawing.Size(85, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "label1";
             // 
@@ -109,21 +110,22 @@
             this.diemkq.AutoSize = true;
             this.diemkq.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.diemkq.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.diemkq.Location = new System.Drawing.Point(804, 69);
+            this.diemkq.Location = new System.Drawing.Point(715, 55);
             this.diemkq.Name = "diemkq";
-            this.diemkq.Size = new System.Drawing.Size(98, 32);
+            this.diemkq.Size = new System.Drawing.Size(85, 29);
             this.diemkq.TabIndex = 2;
             this.diemkq.Text = "label2";
             // 
             // FResultOfTest
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(28)))), ((int)(((byte)(104)))));
-            this.ClientSize = new System.Drawing.Size(1404, 1126);
+            this.ClientSize = new System.Drawing.Size(1248, 844);
             this.Controls.Add(this.diemkq);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvAttemptQestion);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FResultOfTest";
             this.Text = "FResultOfTest";
             this.Load += new System.EventHandler(this.FResultOfTest_Load);

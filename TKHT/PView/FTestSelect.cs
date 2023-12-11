@@ -20,6 +20,8 @@ namespace TKHT.PView
         {
             InitializeComponent();
             loadComboBox();
+            dgvTests.EditMode = DataGridViewEditMode.EditProgrammatically;
+
         }
 
         private void DienthoaiSV_Click(object sender, EventArgs e)

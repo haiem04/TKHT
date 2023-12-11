@@ -21,7 +21,8 @@ namespace TKHT.PControl
                 AttemptId = s.id,
                 Date = s.Test.Date,
                 Type = s.Test.Type.ToString(),
-                Subject = s.Test.Subject.SubjectName
+                Subject = s.Test.Subject.SubjectName,
+                Name = s.Test.Name
             }).ToList();
             return tests;
         }

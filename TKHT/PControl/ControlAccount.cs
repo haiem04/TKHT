@@ -24,5 +24,10 @@ namespace TKHT.PControl
             return false;
 
         }
+        public static void addAccount(Account acc)
+        {
+            db.Accounts.Add(acc);
+            db.SaveChanges();
+        }
     }
 }

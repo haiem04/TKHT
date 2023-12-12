@@ -162,6 +162,12 @@ namespace TKHT.PView
             };
             Debug.WriteLine($"MaMH: {st.Name}, MaKhoa: {st.Address}, TenMH: {st.Phone}, SoTinChi: {st.Sex}, cc: {st.ClassId}");
             ControlHocVien.Add(st);
+            ControlAccount.addAccount(new Account
+            {
+                UserName = st.Name,
+                Password ="1",
+                StudentId = st.id
+            });
             loadDSHocVien();
             resetText();
 

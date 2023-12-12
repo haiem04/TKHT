@@ -50,6 +50,7 @@
             this.timKiemHVBTN = new System.Windows.Forms.Button();
             this.lietkehvBTN = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistory)).BeginInit();
             this.panel4.SuspendLayout();
@@ -61,6 +62,7 @@
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(28)))), ((int)(((byte)(104)))));
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.managerToolStripMenuItem,
@@ -68,7 +70,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 15, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1761, 41);
+            this.menuStrip1.Size = new System.Drawing.Size(1761, 46);
             this.menuStrip1.TabIndex = 60;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -79,8 +81,8 @@
             this.managerToolStripMenuItem.Margin = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.managerToolStripMenuItem.Name = "managerToolStripMenuItem";
             this.managerToolStripMenuItem.Padding = new System.Windows.Forms.Padding(40, 0, 4, 0);
-            this.managerToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
-            this.managerToolStripMenuItem.Text = "Admin";
+            this.managerToolStripMenuItem.Size = new System.Drawing.Size(112, 29);
+            this.managerToolStripMenuItem.Text = "Home";
             this.managerToolStripMenuItem.Click += new System.EventHandler(this.managerToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
@@ -90,7 +92,7 @@
             this.toolStripMenuItem1.Margin = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(40, 0, 4, 0);
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(108, 24);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(120, 29);
             this.toolStripMenuItem1.Text = "Logout";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -168,7 +170,7 @@
             this.DienthoaiSV.Location = new System.Drawing.Point(30, 15);
             this.DienthoaiSV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DienthoaiSV.Name = "DienthoaiSV";
-            this.DienthoaiSV.Size = new System.Drawing.Size(45, 20);
+            this.DienthoaiSV.Size = new System.Drawing.Size(53, 25);
             this.DienthoaiSV.TabIndex = 23;
             this.DienthoaiSV.Text = "Loại";
             // 
@@ -206,7 +208,7 @@
             this.KhoaSV.Location = new System.Drawing.Point(30, 11);
             this.KhoaSV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.KhoaSV.Name = "KhoaSV";
-            this.KhoaSV.Size = new System.Drawing.Size(80, 20);
+            this.KhoaSV.Size = new System.Drawing.Size(95, 25);
             this.KhoaSV.TabIndex = 21;
             this.KhoaSV.Text = "Môn học";
             this.KhoaSV.Click += new System.EventHandler(this.KhoaSV_Click);
@@ -238,7 +240,7 @@
             this.NameSV.Location = new System.Drawing.Point(30, 11);
             this.NameSV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameSV.Name = "NameSV";
-            this.NameSV.Size = new System.Drawing.Size(118, 20);
+            this.NameSV.Size = new System.Drawing.Size(137, 25);
             this.NameSV.TabIndex = 22;
             this.NameSV.Text = "Ngày làm bài";
             // 
@@ -273,7 +275,7 @@
             this.lietkehvBTN.Name = "lietkehvBTN";
             this.lietkehvBTN.Size = new System.Drawing.Size(145, 54);
             this.lietkehvBTN.TabIndex = 105;
-            this.lietkehvBTN.Text = "Sắp xếp";
+            this.lietkehvBTN.Text = "Sắp xếp giảm dần";
             this.lietkehvBTN.UseVisualStyleBackColor = false;
             this.lietkehvBTN.Click += new System.EventHandler(this.lietkehvBTN_Click);
             // 
@@ -289,12 +291,26 @@
             this.pictureBox1.TabIndex = 116;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(59)))), ((int)(((byte)(122)))));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(230, 92);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(145, 54);
+            this.button1.TabIndex = 117;
+            this.button1.Text = "Sắp xếp tăng dần";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(28)))), ((int)(((byte)(104)))));
             this.ClientSize = new System.Drawing.Size(1761, 934);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvHistory);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -305,6 +321,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "FHistory";
             this.Text = "FHistory";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -345,5 +362,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Date;
         private System.Windows.Forms.DataGridViewTextBoxColumn Type;
         private System.Windows.Forms.DataGridViewTextBoxColumn Subject;
+        private System.Windows.Forms.Button button1;
     }
 }

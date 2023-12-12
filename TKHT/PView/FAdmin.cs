@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TKHT.DTO;
 using TKHT.PControl;
+using TKHT.PUtil;
 
 namespace TKHT.PView
 {
@@ -186,6 +187,24 @@ namespace TKHT.PView
         {
             this.Hide();
             FTestSelect f = new FTestSelect();
+            f.Show();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adminToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FLogin f = new FLogin();
+            GlobalVar.studentInfo = null;
             f.Show();
         }
     }

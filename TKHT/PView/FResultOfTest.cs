@@ -42,5 +42,10 @@ namespace TKHT.PView
         {
 
         }
+
+        private void dgvAttemptQestion_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

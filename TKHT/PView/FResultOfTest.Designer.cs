@@ -44,9 +44,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(14, 52);
+            this.label1.Location = new System.Drawing.Point(9, 34);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 32);
+            this.label1.Size = new System.Drawing.Size(66, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "label1";
             // 
@@ -55,9 +56,10 @@
             this.diemkq.AutoSize = true;
             this.diemkq.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.diemkq.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.diemkq.Location = new System.Drawing.Point(904, 86);
+            this.diemkq.Location = new System.Drawing.Point(603, 56);
+            this.diemkq.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.diemkq.Name = "diemkq";
-            this.diemkq.Size = new System.Drawing.Size(98, 32);
+            this.diemkq.Size = new System.Drawing.Size(66, 24);
             this.diemkq.TabIndex = 2;
             this.diemkq.Text = "label2";
             // 
@@ -66,9 +68,10 @@
             this.name.AutoSize = true;
             this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.name.ForeColor = System.Drawing.Color.White;
-            this.name.Location = new System.Drawing.Point(14, 132);
+            this.name.Location = new System.Drawing.Point(9, 86);
+            this.name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(98, 32);
+            this.name.Size = new System.Drawing.Size(66, 24);
             this.name.TabIndex = 5;
             this.name.Text = "label4";
             // 
@@ -83,13 +86,14 @@
             this.ChapterName,
             this.Question,
             this.Answer});
-            this.dgvAttemptQestion.Location = new System.Drawing.Point(14, 218);
-            this.dgvAttemptQestion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dgvAttemptQestion.Location = new System.Drawing.Point(9, 142);
+            this.dgvAttemptQestion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dgvAttemptQestion.Name = "dgvAttemptQestion";
             this.dgvAttemptQestion.RowHeadersWidth = 62;
             this.dgvAttemptQestion.RowTemplate.Height = 28;
-            this.dgvAttemptQestion.Size = new System.Drawing.Size(1552, 1175);
+            this.dgvAttemptQestion.Size = new System.Drawing.Size(1035, 764);
             this.dgvAttemptQestion.TabIndex = 0;
+            this.dgvAttemptQestion.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAttemptQestion_CellContentClick);
             // 
             // id
             // 
@@ -121,15 +125,15 @@
             // 
             // FResultOfTest
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(28)))), ((int)(((byte)(104)))));
-            this.ClientSize = new System.Drawing.Size(1580, 1319);
+            this.ClientSize = new System.Drawing.Size(1053, 690);
             this.Controls.Add(this.name);
             this.Controls.Add(this.diemkq);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvAttemptQestion);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "FResultOfTest";
             this.Text = "FResultOfTest";
             this.Load += new System.EventHandler(this.FResultOfTest_Load);

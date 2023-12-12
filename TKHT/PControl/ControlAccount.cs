@@ -18,6 +18,7 @@ namespace TKHT.PControl
             if (acc != null)
             {
                 GlobalVar.studentInfo = acc.Student;
+                GlobalVar.account = acc;
                 return true;
             }
             return false;

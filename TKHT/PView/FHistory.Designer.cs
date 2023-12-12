@@ -321,7 +321,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "FHistory";
             this.Text = "FHistory";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

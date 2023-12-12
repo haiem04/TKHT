@@ -1554,8 +1554,8 @@
             this.managerToolStripMenuItem.Margin = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.managerToolStripMenuItem.Name = "managerToolStripMenuItem";
             this.managerToolStripMenuItem.Padding = new System.Windows.Forms.Padding(40, 0, 4, 0);
-            this.managerToolStripMenuItem.Size = new System.Drawing.Size(116, 29);
-            this.managerToolStripMenuItem.Text = "Admin";
+            this.managerToolStripMenuItem.Size = new System.Drawing.Size(112, 29);
+            this.managerToolStripMenuItem.Text = "Home";
             this.managerToolStripMenuItem.Click += new System.EventHandler(this.managerToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1

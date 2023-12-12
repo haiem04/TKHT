@@ -20,6 +20,8 @@ namespace TKHT.PView
         {
             InitializeComponent();
             loadComboBox();
+            dgvTests.EditMode = DataGridViewEditMode.EditProgrammatically;
+
         }
 
         private void DienthoaiSV_Click(object sender, EventArgs e)
@@ -87,6 +89,13 @@ namespace TKHT.PView
             this.Hide();
             FLogin f = new FLogin();
             GlobalVar.studentInfo = null;
+            f.Show();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FAdmin f = new FAdmin();
             f.Show();
         }
     }

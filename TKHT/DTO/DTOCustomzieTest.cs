@@ -13,5 +13,6 @@ namespace TKHT.DTO
         public string Type { get; set; }
         public string Subject { get; set; }
         public int AttemptId { get; set; }
+        public string Name { get; set; }
     }
 }

@@ -51,8 +51,11 @@ namespace TKHT.PView
                 int idColumnIndex1 = dgv.Columns["Date"].Index;
 
                 var idValue1 = dgv.Rows[e.RowIndex].Cells[idColumnIndex1].Value;
+                int idColumnIndex2 = dgv.Columns["Name"].Index;
 
-                FResultOfTest f = new FResultOfTest(int.Parse(idValue.ToString()), idValue1.ToString());
+                var idValue2 = dgv.Rows[e.RowIndex].Cells[idColumnIndex2].Value;
+
+                FResultOfTest f = new FResultOfTest(int.Parse(idValue.ToString()), idValue1.ToString(), idValue2.ToString());
                 f.Show();
             }
         }

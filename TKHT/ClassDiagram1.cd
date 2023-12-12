@@ -59,7 +59,6 @@
   <Class Name="TKHT.PView.FAdmin">
     <Position X="1.75" Y="6.5" Width="1.5" />
     <Members>
-      <Field Name="adminToolStripMenuItem" Hidden="true" />
       <Field Name="btnUpdate" Hidden="true" />
       <Field Name="cbLop" Hidden="true" />
       <Field Name="cbSex" Hidden="true" />
@@ -96,7 +95,6 @@
       <Field Name="pictureBox1" Hidden="true" />
       <Field Name="t" Hidden="true" />
       <Field Name="textBox2" Hidden="true" />
-      <Field Name="toolStripMenuItem1" Hidden="true" />
       <Field Name="toolStripMenuItem2" Hidden="true" />
       <Field Name="toolStripMenuItem3" Hidden="true" />
       <Field Name="txtAddress" Hidden="true" />
@@ -104,7 +102,7 @@
       <Field Name="txtStudentName" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>FTAAAAQABCATQBASIACJAAADggjIAAAgAA0AAQBJCGA=</HashCode>
+      <HashCode>VTAAAAQABCATQBgSIACJAAADggjIAAAgAA0AAQBJCGA=</HashCode>
       <FileName>PView\FAdmin.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -137,7 +135,7 @@
       <Field Name="Type" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>AQAACFABACAyAAACAYCAAADCCBCAAACJAUAAQQFABkA=</HashCode>
+      <HashCode>AQAACFABACAyAAACAYCAAATCCBCAAACJAUAAQQFABkA=</HashCode>
       <FileName>PView\FHistory.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -298,7 +296,7 @@
       <Field Name="xoaMonBTN" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>/4SQC9oAASgowFIGwQGIUMhCIBCo+hiOkCCQQQDfFHg=</HashCode>
+      <HashCode>/4SQC9oAASgowFIGwQGIUMhCIBCo+hiOkCCQQQHfFHg=</HashCode>
       <FileName>PView\FManage.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -318,7 +316,7 @@
       <Field Name="Question" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAgAAAKAAABACAACAAAACAAAAAABEAAAAAwiAAgA=</HashCode>
+      <HashCode>AAAAAgAAAKAAABACAACQAAACAAAAAABEAAAAAwiAAgA=</HashCode>
       <FileName>PView\FResultOfTest.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -366,6 +364,48 @@
     <TypeIdentifier>
       <HashCode>QAIACIAAAKBABAIBMgCgBABCzAcAACUgkAQAAQAAIQA=</HashCode>
       <FileName>PView\FTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.DTO.DTOAttempt">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAABAAAAAAACAgA=</HashCode>
+      <FileName>DTO\DTOAttempt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.DTO.DTOCustomizeAttemptQuestion">
+    <Position X="13.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAABEAAAAQgQAAAA=</HashCode>
+      <FileName>DTO\DTOCustomizeAttemptQuestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.DTO.DTOCustomzieTest">
+    <Position X="1.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAQAAAAAAAABAQAAQAAAAgA=</HashCode>
+      <FileName>DTO\DTOCustomzieTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.DTO.DTOStudent">
+    <Position X="10.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAhAAAAAAAAAQAAAAAAAACAAAAIAAAAAA=</HashCode>
+      <FileName>DTO\DTOStudent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.DTO.DTOSubject">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAgA=</HashCode>
+      <FileName>DTO\DTOSubject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.DTO.DTOTest">
+    <Position X="4.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAIAAAAQAAAAEAAABAQAAAAAAAgA=</HashCode>
+      <FileName>DTO\DTOTest.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

@@ -25,5 +25,12 @@ namespace TKHT.PView
             GlobalVar.studentInfo = null;
             f.Show();
         }
+
+        private void managerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FAdmin f = new FAdmin();
+            f.Show();
+        }
     }
 }

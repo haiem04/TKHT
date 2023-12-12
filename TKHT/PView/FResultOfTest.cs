@@ -16,12 +16,14 @@ namespace TKHT.PView
     {
         public int attemptId;
         public string date;
+        public string fName;
         private List<DTO.DTOCustomizeAttemptQuestion> list = new List<DTO.DTOCustomizeAttemptQuestion>();
-        public FResultOfTest(int attemptId, string date)
+        public FResultOfTest(int attemptId, string date, string name)
         {
             InitializeComponent();
             this.attemptId = attemptId;
             this.date = date;
+            this.fName = name;
             load();
             dgvAttemptQestion.AutoGenerateColumns = false;
             dgvAttemptQestion.EditMode = DataGridViewEditMode.EditProgrammatically;
@@ -33,6 +35,7 @@ namespace TKHT.PView
             list = ControlAttempt.getResultOfTest(attemptId);
             int mark = list.Count(x => x.Answer == x.CorrectAnswer);
             diemkq.Text = $"Kết quả: {mark}/{list.Count()}";
+            name.Text = $"Tên bài kiểm tra: {fName}";
             dgvAttemptQestion.DataSource = list;
         }
 

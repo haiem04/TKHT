@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TKHT.PControl.ControlAccount">
+    <Position X="10.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>PControl\ControlAccount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.PControl.ControlAttempt">
+    <Position X="12.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAECAAAAAggAAAAgAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>PControl\ControlAttempt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.PControl.ControlClass">
+    <Position X="3.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PControl\ControlClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.PControl.ControlHocVien">
+    <Position X="5.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAABAAAAAAAEAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PControl\ControlHocVien.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.PControl.ControlQuestion">
+    <Position X="9" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>PControl\ControlQuestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.PControl.ControlSubject">
+    <Position X="2" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>PControl\ControlSubject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.PControl.ControlTest">
+    <Position X="7.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PControl\ControlTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.ControlDB">
+    <Position X="7.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ControlDB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.PView.FAdmin">
+    <Position X="1.75" Y="6.5" Width="1.5" />
+    <Members>
+      <Field Name="btnUpdate" Hidden="true" />
+      <Field Name="cbLop" Hidden="true" />
+      <Field Name="cbSex" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="contextMenuStrip1" Hidden="true" />
+      <Field Name="dangKyBTN" Hidden="true" />
+      <Field Name="db" Hidden="true" />
+      <Field Name="dgvStudentList" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="hoTenTXT" Hidden="true" />
+      <Field Name="huyDangKyBTN" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label10" Hidden="true" />
+      <Field Name="label14" Hidden="true" />
+      <Field Name="label16" Hidden="true" />
+      <Field Name="label19" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="label6" Hidden="true" />
+      <Field Name="label9" Hidden="true" />
+      <Field Name="logoutToolStripMenuItem" Hidden="true" />
+      <Field Name="maLopcb" Hidden="true" />
+      <Field Name="menuStrip1" Hidden="true" />
+      <Field Name="panel1" Hidden="true" />
+      <Field Name="panel10" Hidden="true" />
+      <Field Name="panel13" Hidden="true" />
+      <Field Name="panel2" Hidden="true" />
+      <Field Name="panel3" Hidden="true" />
+      <Field Name="panel4" Hidden="true" />
+      <Field Name="panel8" Hidden="true" />
+      <Field Name="pictureBox1" Hidden="true" />
+      <Field Name="t" Hidden="true" />
+      <Field Name="textBox2" Hidden="true" />
+      <Field Name="toolStripMenuItem2" Hidden="true" />
+      <Field Name="toolStripMenuItem3" Hidden="true" />
+      <Field Name="txtAddress" Hidden="true" />
+      <Field Name="txtPhone" Hidden="true" />
+      <Field Name="txtStudentName" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>VTAAAAQABCATQBgSIACJAAADggjIAAAgAA0AAQBJCGA=</HashCode>
+      <FileName>PView\FAdmin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.PView.FHistory">
+    <Position X="7.75" Y="6.5" Width="1.5" />
+    <Members>
+      <Field Name="AttemptID" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="Date" Hidden="true" />
+      <Field Name="dgvHistory" Hidden="true" />
+      <Field Name="DienthoaiSV" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="dpDate" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="KhoaSV" Hidden="true" />
+      <Field Name="lietkehvBTN" Hidden="true" />
+      <Field Name="managerToolStripMenuItem" Hidden="true" />
+      <Field Name="menuStrip1" Hidden="true" />
+      <Field Name="NameSV" Hidden="true" />
+      <Field Name="panel2" Hidden="true" />
+      <Field Name="panel3" Hidden="true" />
+      <Field Name="panel4" Hidden="true" />
+      <Field Name="pictureBox1" Hidden="true" />
+      <Field Name="Subject" Hidden="true" />
+      <Field Name="tbFind" Hidden="true" />
+      <Field Name="tbLoai" Hidden="true" />
+      <Field Name="tbSubject" Hidden="true" />
+      <Field Name="timKiemHVBTN" Hidden="true" />
+      <Field Name="toolStripMenuItem1" Hidden="true" />
+      <Field Name="Type" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQAACFABACAyAAACAYCAAATCCBCIAACJAUAEQQFABkA=</HashCode>
+      <FileName>PView\FHistory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.PView.FLogin">
+    <Position X="13" Y="6.5" Width="1.5" />
+    <Members>
+      <Field Name="button2" Hidden="true" />
+      <Field Name="button3" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="label7" Hidden="true" />
+      <Field Name="label8" Hidden="true" />
+      <Field Name="label9" Hidden="true" />
+      <Field Name="panel1" Hidden="true" />
+      <Field Name="panel2" Hidden="true" />
+      <Field Name="panel3" Hidden="true" />
+      <Field Name="pictureBox1" Hidden="true" />
+      <Field Name="pictureBox2" Hidden="true" />
+      <Field Name="pictureBox3" Hidden="true" />
+      <Field Name="textBox1" Hidden="true" />
+      <Field Name="textBox2" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ACAAABAAACAAABAAAACAAAASAAAwAAAAEKAAAQBAAAA=</HashCode>
+      <FileName>PView\FLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.PView.FManage">
+    <Position X="11.25" Y="6.5" Width="1.5" />
+    <Members>
+      <Field Name="btnAsc" Hidden="true" />
+      <Field Name="button1" Hidden="true" />
+      <Field Name="button3" Hidden="true" />
+      <Field Name="capnhathvBTN" Hidden="true" />
+      <Field Name="capnhatlopBTN" Hidden="true" />
+      <Field Name="capNhatMon" Hidden="true" />
+      <Field Name="CapNhatThiBTN" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dateFrom" Hidden="true" />
+      <Field Name="dateTo" Hidden="true" />
+      <Field Name="dgvBienLai" Hidden="true" />
+      <Field Name="dgvHV" Hidden="true" />
+      <Field Name="dgvLop" Hidden="true" />
+      <Field Name="dgvMon" Hidden="true" />
+      <Field Name="dgvThi" Hidden="true" />
+      <Field Name="DiemThiNUM" Hidden="true" />
+      <Field Name="DienthoaiSV" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="doanhThuTXT" Hidden="true" />
+      <Field Name="dtpNKG" Hidden="true" />
+      <Field Name="dtpTKB" Hidden="true" />
+      <Field Name="hienThiBienLaiBTN" Hidden="true" />
+      <Field Name="hotenhvTXT" Hidden="true" />
+      <Field Name="huongDanBLTXT" Hidden="true" />
+      <Field Name="huongDanMonTXT" Hidden="true" />
+      <Field Name="HuongDanThiTXT" Hidden="true" />
+      <Field Name="HV_ThiCB" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="KhoaSV" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label10" Hidden="true" />
+      <Field Name="label11" Hidden="true" />
+      <Field Name="label12" Hidden="true" />
+      <Field Name="label14" Hidden="true" />
+      <Field Name="label15" Hidden="true" />
+      <Field Name="label16" Hidden="true" />
+      <Field Name="label17" Hidden="true" />
+      <Field Name="label18" Hidden="true" />
+      <Field Name="label19" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label20" Hidden="true" />
+      <Field Name="label21" Hidden="true" />
+      <Field Name="label22" Hidden="true" />
+      <Field Name="label23" Hidden="true" />
+      <Field Name="label24" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="label6" Hidden="true" />
+      <Field Name="label7" Hidden="true" />
+      <Field Name="label8" Hidden="true" />
+      <Field Name="label9" Hidden="true" />
+      <Field Name="lietkehvBTN" Hidden="true" />
+      <Field Name="lop_monCB" Hidden="true" />
+      <Field Name="lopSV" Hidden="true" />
+      <Field Name="lythuyetMonNUM" Hidden="true" />
+      <Field Name="managerToolStripMenuItem" Hidden="true" />
+      <Field Name="menuStrip1" Hidden="true" />
+      <Field Name="Mon_ThiCB" Hidden="true" />
+      <Field Name="NameSV" Hidden="true" />
+      <Field Name="ngaysinhhvDP" Hidden="true" />
+      <Field Name="nghenghiephvTXT" Hidden="true" />
+      <Field Name="nmrHocPhan" Hidden="true" />
+      <Field Name="noisinhhvTXT" Hidden="true" />
+      <Field Name="panel1" Hidden="true" />
+      <Field Name="panel10" Hidden="true" />
+      <Field Name="panel11" Hidden="true" />
+      <Field Name="panel12" Hidden="true" />
+      <Field Name="panel13" Hidden="true" />
+      <Field Name="panel14" Hidden="true" />
+      <Field Name="panel2" Hidden="true" />
+      <Field Name="panel20" Hidden="true" />
+      <Field Name="panel22" Hidden="true" />
+      <Field Name="panel23" Hidden="true" />
+      <Field Name="panel3" Hidden="true" />
+      <Field Name="panel4" Hidden="true" />
+      <Field Name="panel5" Hidden="true" />
+      <Field Name="panel6" Hidden="true" />
+      <Field Name="panel7" Hidden="true" />
+      <Field Name="panel8" Hidden="true" />
+      <Field Name="panel9" Hidden="true" />
+      <Field Name="pictureBox1" Hidden="true" />
+      <Field Name="pictureBox2" Hidden="true" />
+      <Field Name="pictureBox3" Hidden="true" />
+      <Field Name="pictureBox4" Hidden="true" />
+      <Field Name="pictureBox5" Hidden="true" />
+      <Field Name="sapXepBLBTN" Hidden="true" />
+      <Field Name="tabPage1" Hidden="true" />
+      <Field Name="tabPage2" Hidden="true" />
+      <Field Name="tabPage3" Hidden="true" />
+      <Field Name="tabPage4" Hidden="true" />
+      <Field Name="tabPage5" Hidden="true" />
+      <Field Name="tenMonTXT" Hidden="true" />
+      <Field Name="textBox1" Hidden="true" />
+      <Field Name="themhvBTN" Hidden="true" />
+      <Field Name="themlopBTN" Hidden="true" />
+      <Field Name="themMonBTN" Hidden="true" />
+      <Field Name="ThemThiBTN" Hidden="true" />
+      <Field Name="ThiDP" Hidden="true" />
+      <Field Name="thuchanhMonNUM" Hidden="true" />
+      <Field Name="timKiemBienLaiBTN" Hidden="true" />
+      <Field Name="timKiemBienLaiTXT" Hidden="true" />
+      <Field Name="timKiemHVBTN" Hidden="true" />
+      <Field Name="timKiemHVTXT" Hidden="true" />
+      <Field Name="timkiemlopBTN" Hidden="true" />
+      <Field Name="timkiemlopTXT" Hidden="true" />
+      <Field Name="timKiemMonBTN" Hidden="true" />
+      <Field Name="timKiemMonTXT" Hidden="true" />
+      <Field Name="TimKiemThiBTN" Hidden="true" />
+      <Field Name="TimKiemThiTXT" Hidden="true" />
+      <Field Name="toolStripMenuItem1" Hidden="true" />
+      <Field Name="txtHelp" Hidden="true" />
+      <Field Name="txtHocPhi" Hidden="true" />
+      <Field Name="txtHuongDan" Hidden="true" />
+      <Field Name="txtTenLop" Hidden="true" />
+      <Field Name="xemhvBTN" Hidden="true" />
+      <Field Name="xemLopBTN" Hidden="true" />
+      <Field Name="xemMonBTN" Hidden="true" />
+      <Field Name="XemThiBTN" Hidden="true" />
+      <Field Name="xoahvBTN" Hidden="true" />
+      <Field Name="xoalopBTN" Hidden="true" />
+      <Field Name="xoaMonBTN" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>/4SQC9oAASgowFIGwQGIUMhCIBCo+hiOkCCQQQHfFHg=</HashCode>
+      <FileName>PView\FManage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.PView.FResultOfTest">
+    <Position X="9.5" Y="6.5" Width="1.5" />
+    <Members>
+      <Field Name="Answer" Hidden="true" />
+      <Field Name="ChapterName" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="CorrectAnswer" Hidden="true" />
+      <Field Name="dgvAttemptQestion" Hidden="true" />
+      <Field Name="diemkq" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="id" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="Question" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAKAAABACAACQAAACAAAAAABEAAAAAwiAAgA=</HashCode>
+      <FileName>PView\FResultOfTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.PView.FTestSelect">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <Members>
+      <Field Name="comboBox1" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvTests" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="managerToolStripMenuItem" Hidden="true" />
+      <Field Name="menuStrip1" Hidden="true" />
+      <Field Name="textBox1" Hidden="true" />
+      <Field Name="toolStripMenuItem1" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQAAAAQAACAgAAASAASAgABSAACgAAAIMAAAAAEAAAA=</HashCode>
+      <FileName>PView\FTestSelect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.PView.FTest">
+    <Position X="3.75" Y="6.5" Width="1.5" />
+    <Members>
+      <Field Name="answerA" Hidden="true" />
+      <Field Name="answerB" Hidden="true" />
+      <Field Name="asnwerC" Hidden="true" />
+      <Field Name="asnwerD" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="countdownTimer" Hidden="true" />
+      <Method Name="CountdownTimer_Tick" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="nextBtn" Hidden="true" />
+      <Field Name="pageNumberTxt" Hidden="true" />
+      <Field Name="panel1" Hidden="true" />
+      <Field Name="prevBtn" Hidden="true" />
+      <Field Name="questionPanel" Hidden="true" />
+      <Field Name="questionTitle" Hidden="true" />
+      <Field Name="submitTestBtn" Hidden="true" />
+      <Field Name="textBox1" Hidden="true" />
+      <Field Name="textBox3" Hidden="true" />
+      <Field Name="timeLeft" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QAIACIAAAKBABAIBMgCgBABCzAcAACUgkAQAAQAAIQA=</HashCode>
+      <FileName>PView\FTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.DTO.DTOAttempt">
+    <Position X="16.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAABAAAAAAACAgA=</HashCode>
+      <FileName>DTO\DTOAttempt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.DTO.DTOCustomizeAttemptQuestion">
+    <Position X="15.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAABEAAAAQgQAAAA=</HashCode>
+      <FileName>DTO\DTOCustomizeAttemptQuestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.DTO.DTOCustomzieTest">
+    <Position X="19.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAQAAAAAAAABAQAAQAAAAgA=</HashCode>
+      <FileName>DTO\DTOCustomzieTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.DTO.DTOStudent">
+    <Position X="13.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAhAAAAAAAAAQAAAAAAAACAAAAIAAAAAA=</HashCode>
+      <FileName>DTO\DTOStudent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.DTO.DTOSubject">
+    <Position X="17.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAgA=</HashCode>
+      <FileName>DTO\DTOSubject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TKHT.DTO.DTOTest">
+    <Position X="12" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAIAAAAQAAAAEAAABAQAAAAAAAgA=</HashCode>
+      <FileName>DTO\DTOTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

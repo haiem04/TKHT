@@ -18,6 +18,8 @@ namespace TKHT.PView
     {
         BindingList<DTOStudent> listStudent = new BindingList<DTOStudent>();
         public static TKHTEntities1 db = new TKHTEntities1();
+        public Account userInfo = GlobalVar.account;
+
         public FAdmin()
         {
             InitializeComponent();
@@ -31,6 +33,30 @@ namespace TKHT.PView
 
             // Optionally, set the selected index to 0 to display the empty value by default
             cbSex.SelectedIndex = 0;
+
+            if (userInfo.StudentId == null)
+            {
+                historyTestStrip.Visible = false;
+                takeTestStrip.Visible = false;
+            } else
+            {
+                dgvStudentList.Visible = false;
+                txtAddress.Visible = false;
+                txtPhone.Visible = false;
+                txtStudentName.Visible = false;
+                hoTenTXT.Visible = false;
+                label1.Visible = false;
+                label19.Visible = false;
+                label2.Visible = false;
+                label14.Visible = false;
+                label6.Visible = false;
+                huyDangKyBTN.Visible = false;
+                btnUpdate.Visible = false;
+                dangKyBTN.Visible = false;
+                cbLop.Visible = false;
+                cbSex.Visible = false;
+                t.Visible = false;
+            }
         }
 
 
@@ -90,8 +116,8 @@ namespace TKHT.PView
                     txtStudentName.Text = name?.Value.ToString();
                     txtAddress.Text = address?.Value.ToString();
                     txtPhone.Text = phone?.Value.ToString();
-                    cbSex.SelectedValue = sex?.Value.ToString();
-                    cbLop.SelectedValue = className?.Value.ToString();
+                    cbSex.SelectedItem = sex?.Value.ToString();
+                    cbLop.SelectedItem = className?.Value.ToString();
                 }
             }
         }
@@ -119,7 +145,7 @@ namespace TKHT.PView
                     cbSex.SelectedItem = sex?.Value?.ToString() ?? "";
 
                     // Handle cbLop similarly, assuming it's set up in a compatible way
-                    cbLop.SelectedValue = className?.Value.ToString();
+                    cbLop.SelectedItem = className?.Value.ToString();
                 }
             }
         }
@@ -136,6 +162,12 @@ namespace TKHT.PView
             };
             Debug.WriteLine($"MaMH: {st.Name}, MaKhoa: {st.Address}, TenMH: {st.Phone}, SoTinChi: {st.Sex}, cc: {st.ClassId}");
             ControlHocVien.Add(st);
+            ControlAccount.addAccount(new Account
+            {
+                UserName = st.Name,
+                Password ="1",
+                StudentId = st.id
+            });
             loadDSHocVien();
             resetText();
 
@@ -153,7 +185,7 @@ namespace TKHT.PView
 
         private void huyDangKyBTN_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Chắc chắn muốn xóa môn học?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            DialogResult dialogResult = MessageBox.Show("Chắc chắn muốn xóa học viên?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.Yes)
             {
                 int index = dgvStudentList.CurrentCell.RowIndex;
@@ -166,7 +198,7 @@ namespace TKHT.PView
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Chắc chắn muốn cập nhật môn học?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            DialogResult dialogResult = MessageBox.Show("Chắc chắn muốn cập nhật học viên?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.Yes)
             {
                 int index = dgvStudentList.CurrentCell.RowIndex;

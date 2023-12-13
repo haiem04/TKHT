@@ -10,5 +10,6 @@ namespace TKHT.PUtil
     {
         public static Student studentInfo;
         public static int testDuration;
+        public static Account account;
     }
 }

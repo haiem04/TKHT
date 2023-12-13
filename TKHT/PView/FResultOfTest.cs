@@ -24,10 +24,9 @@ namespace TKHT.PView
             this.attemptId = attemptId;
             this.date = date;
             this.fName = name;
-            load();
             dgvAttemptQestion.AutoGenerateColumns = false;
             dgvAttemptQestion.EditMode = DataGridViewEditMode.EditProgrammatically;
-
+            load();
         }
         private void load()
         {
@@ -40,6 +39,11 @@ namespace TKHT.PView
         }
 
         private void FResultOfTest_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvAttemptQestion_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

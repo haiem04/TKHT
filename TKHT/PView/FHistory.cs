@@ -19,6 +19,7 @@ namespace TKHT.PView
     public partial class FHistory : Form
     {
         private List<DTOCustomzieTest> listDTOCustomzieTest = new List<DTOCustomzieTest>();
+        private List<DTOCustomzieTest> searchList = new List<DTOCustomzieTest>();
         public FHistory()
         {
             InitializeComponent();
@@ -62,8 +63,14 @@ namespace TKHT.PView
 
         private void lietkehvBTN_Click(object sender, EventArgs e)
         {
-            listDTOCustomzieTest.OrderByDescending(x => x.Date);
-            dgvHistory.DataSource = listDTOCustomzieTest;
+
+            List<DTOCustomzieTest> newList = new List<DTOCustomzieTest>();
+            if (searchList.Count() > 0)
+            {
+                newList = searchList.OrderByDescending(x => x.Date).ToList();
+            }
+            else newList = listDTOCustomzieTest.OrderByDescending(x => x.Date).ToList();
+            dgvHistory.DataSource = newList;
 
         }
 
@@ -105,8 +112,8 @@ namespace TKHT.PView
                 dgvHistory.DataSource = listDTOCustomzieTest;
                 return;
             }
-            bool containsNumber = Regex.IsMatch(vFind, @"\d");
-            var newList = containsNumber ? listDTOCustomzieTest.Where(x => x.Date.ToString().Contains(vFind)).ToList() : listDTOCustomzieTest.Where(x => x.Subject.Contains(vFind.ToLower())).ToList();
+           var newList = listDTOCustomzieTest.Where(x => x.Name.ToLower().Contains(vFind.ToLower()) || x.Subject.ToLower().Contains(vFind.ToLower())).ToList();
+            searchList = newList;
             dgvHistory.DataSource = newList;
         }
 
@@ -128,6 +135,17 @@ namespace TKHT.PView
             FLogin f = new FLogin();
             GlobalVar.studentInfo = null;
             f.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            List<DTOCustomzieTest> newList = new List<DTOCustomzieTest>();
+            if (searchList.Count() > 0)
+            {
+                newList = searchList.OrderBy(x => x.Date).ToList();
+            }
+            else  newList = listDTOCustomzieTest.OrderBy(x => x.Date).ToList();
+            dgvHistory.DataSource = newList;
         }
     }
 }

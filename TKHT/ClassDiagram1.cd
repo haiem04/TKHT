@@ -56,8 +56,8 @@
       <FileName>ControlDB.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TKHT.PView.FAdmin">
-    <Position X="1.75" Y="6.5" Width="1.5" />
+  <Class Name="TKHT.PView.FAdmin" Collapsed="true">
+    <Position X="22.5" Y="11.75" Width="1.5" />
     <Members>
       <Field Name="btnUpdate" Hidden="true" />
       <Field Name="cbLop" Hidden="true" />
@@ -95,19 +95,17 @@
       <Field Name="pictureBox1" Hidden="true" />
       <Field Name="t" Hidden="true" />
       <Field Name="textBox2" Hidden="true" />
-      <Field Name="toolStripMenuItem2" Hidden="true" />
-      <Field Name="toolStripMenuItem3" Hidden="true" />
       <Field Name="txtAddress" Hidden="true" />
       <Field Name="txtPhone" Hidden="true" />
       <Field Name="txtStudentName" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>VTAAAAQABCATQBgSIACJAAADggjIAAAgAA0AAQBJCGA=</HashCode>
+      <HashCode>VTAAAAQABCATQBgQIACJAAADkgjIAAAgAA0AAQDJCGA=</HashCode>
       <FileName>PView\FAdmin.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TKHT.PView.FHistory">
-    <Position X="7.75" Y="6.5" Width="1.5" />
+  <Class Name="TKHT.PView.FHistory" Collapsed="true">
+    <Position X="18.25" Y="11.75" Width="1.5" />
     <Members>
       <Field Name="AttemptID" Hidden="true" />
       <Field Name="components" Hidden="true" />
@@ -139,8 +137,8 @@
       <FileName>PView\FHistory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TKHT.PView.FLogin">
-    <Position X="13" Y="6.5" Width="1.5" />
+  <Class Name="TKHT.PView.FLogin" Collapsed="true">
+    <Position X="23.5" Y="11.75" Width="1.5" />
     <Members>
       <Field Name="button2" Hidden="true" />
       <Field Name="button3" Hidden="true" />
@@ -169,8 +167,8 @@
       <FileName>PView\FLogin.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TKHT.PView.FManage">
-    <Position X="11.25" Y="6.5" Width="1.5" />
+  <Class Name="TKHT.PView.FManage" Collapsed="true">
+    <Position X="21.75" Y="11.75" Width="1.5" />
     <Members>
       <Field Name="btnAsc" Hidden="true" />
       <Field Name="button1" Hidden="true" />
@@ -300,13 +298,12 @@
       <FileName>PView\FManage.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TKHT.PView.FResultOfTest">
-    <Position X="9.5" Y="6.5" Width="1.5" />
+  <Class Name="TKHT.PView.FResultOfTest" Collapsed="true">
+    <Position X="20" Y="11.75" Width="1.5" />
     <Members>
       <Field Name="Answer" Hidden="true" />
       <Field Name="ChapterName" Hidden="true" />
       <Field Name="components" Hidden="true" />
-      <Field Name="CorrectAnswer" Hidden="true" />
       <Field Name="dgvAttemptQestion" Hidden="true" />
       <Field Name="diemkq" Hidden="true" />
       <Method Name="Dispose" Hidden="true" />
@@ -316,30 +313,29 @@
       <Field Name="Question" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAgAAAKAAABACAACQAAACAAAAAABEAAAAAwiAAgA=</HashCode>
+      <HashCode>AAAAAgAAAKAAABACAQCQAAACAAAEAABEAAAAAwiAAgA=</HashCode>
       <FileName>PView\FResultOfTest.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TKHT.PView.FTestSelect">
-    <Position X="5.75" Y="6.5" Width="1.5" />
+  <Class Name="TKHT.PView.FTestSelect" Collapsed="true">
+    <Position X="16.25" Y="11.75" Width="1.5" />
     <Members>
       <Field Name="comboBox1" Hidden="true" />
       <Field Name="components" Hidden="true" />
       <Field Name="dgvTests" Hidden="true" />
       <Method Name="Dispose" Hidden="true" />
       <Method Name="InitializeComponent" Hidden="true" />
-      <Field Name="managerToolStripMenuItem" Hidden="true" />
       <Field Name="menuStrip1" Hidden="true" />
       <Field Name="textBox1" Hidden="true" />
       <Field Name="toolStripMenuItem1" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>AQAAAAQAACAgAAASAASAgABSAACgAAAIMAAAAAEAAAA=</HashCode>
+      <HashCode>AQAAAAQAACAgAAASAASAgAASAACgAAAIMAAAAAEAAAA=</HashCode>
       <FileName>PView\FTestSelect.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TKHT.PView.FTest">
-    <Position X="3.75" Y="6.5" Width="1.5" />
+  <Class Name="TKHT.PView.FTest" Collapsed="true">
+    <Position X="14.25" Y="11.75" Width="1.5" />
     <Members>
       <Field Name="answerA" Hidden="true" />
       <Field Name="answerB" Hidden="true" />
@@ -367,42 +363,42 @@
     </TypeIdentifier>
   </Class>
   <Class Name="TKHT.DTO.DTOAttempt">
-    <Position X="16.75" Y="3.75" Width="1.5" />
+    <Position X="11.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAABAAAAAAACAgA=</HashCode>
       <FileName>DTO\DTOAttempt.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TKHT.DTO.DTOCustomizeAttemptQuestion">
-    <Position X="15.75" Y="1" Width="1.5" />
+    <Position X="6.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAABEAAAAQgQAAAA=</HashCode>
       <FileName>DTO\DTOCustomizeAttemptQuestion.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TKHT.DTO.DTOCustomzieTest">
-    <Position X="19.25" Y="3.25" Width="1.5" />
+    <Position X="9.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAIAAAAQAAAAAAAABAQAAQAAAAgA=</HashCode>
       <FileName>DTO\DTOCustomzieTest.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TKHT.DTO.DTOStudent">
-    <Position X="13.75" Y="1" Width="1.5" />
+    <Position X="4.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAACAhAAAAAAAAAQAAAAAAAACAAAAIAAAAAA=</HashCode>
       <FileName>DTO\DTOStudent.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TKHT.DTO.DTOSubject">
-    <Position X="17.75" Y="0.75" Width="1.5" />
+    <Position X="8" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAgA=</HashCode>
       <FileName>DTO\DTOSubject.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TKHT.DTO.DTOTest">
-    <Position X="12" Y="0.75" Width="1.5" />
+    <Position X="2.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAAAAAIAAAAQAAAAEAAABAQAAAAAAAgA=</HashCode>
       <FileName>DTO\DTOTest.cs</FileName>

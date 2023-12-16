@@ -45,6 +45,15 @@ namespace TKHT.PControl
         {
             try
             {
+                if (st.Accounts.Any())
+                {
+                    db.Accounts.Remove(st.Accounts.FirstOrDefault());
+                }
+                if (st.Attempts.Any())
+                {
+                    db.Attempt_Question.RemoveRange(db.Attempts.SelectMany(x => x.Attempt_Question).ToList());
+                    db.Attempts.RemoveRange(st.Attempts.ToList());
+                }
                 db.Students.Remove(st);
                 db.SaveChanges();
                 MessageBox.Show("Xóa thành công");

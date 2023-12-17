@@ -19,7 +19,7 @@ namespace TKHT.PControl
             {
                 id = s.Test.id,
                 AttemptId = s.id,
-                Date = s.Test.Date,
+                Date = s.Date,
                 Type = s.Test.Type.ToString(),
                 Subject = s.Test.Subject.SubjectName,
                 Name = s.Test.Name
